@@ -1,0 +1,84 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "{\"evidence\": [\"I got charged an airport fee but I wasn't going to the airport.\", \"Done! I've refunded **$12.00** for the incorrect airport fee. It should appear back on your original payment method within 3\u20135 business days.\"], \"verdict\": \"na\", \"reason\": \"The customer raised only one issue (incorrect airport fee charge) and the agent resolved it by issuing a $12.00 refund.\"}",
+    "generation_info": {
+     "finish_reason": "stop",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "{\"evidence\": [\"I got charged an airport fee but I wasn't going to the airport.\", \"Done! I've refunded **$12.00** for the incorrect airport fee. It should appear back on your original payment method within 3\u20135 business days.\"], \"verdict\": \"na\", \"reason\": \"The customer raised only one issue (incorrect airport fee charge) and the agent resolved it by issuing a $12.00 refund.\"}",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 100,
+        "prompt_tokens": 351,
+        "total_tokens": 451,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 100
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 351,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.6-sonnet",
+       "system_fingerprint": null,
+       "id": "chatcmpl-76097449-57a6-4f04-b3f4-fd4291cd6117",
+       "finish_reason": "stop",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16ac0-45bb-77c3-a23a-e4187c15d56b-0",
+      "usage_metadata": {
+       "input_tokens": 351,
+       "output_tokens": 100,
+       "total_tokens": 451,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "tool_calls": [],
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

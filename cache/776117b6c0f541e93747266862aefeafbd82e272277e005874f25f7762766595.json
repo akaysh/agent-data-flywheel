@@ -1,0 +1,84 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "```json\n{\"evidence\": [\"I think I left my phone in the car this morning.\", \"I've opened a lost item ticket (LI-R400) and messaged driver Sam about your phone.\"], \"verdict\": \"na\", \"reason\": \"The customer raised only one issue (lost phone) and the agent handled it by creating a ticket and contacting the driver.\"}\n```",
+    "generation_info": {
+     "finish_reason": "stop",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "```json\n{\"evidence\": [\"I think I left my phone in the car this morning.\", \"I've opened a lost item ticket (LI-R400) and messaged driver Sam about your phone.\"], \"verdict\": \"na\", \"reason\": \"The customer raised only one issue (lost phone) and the agent handled it by creating a ticket and contacting the driver.\"}\n```",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 85,
+        "prompt_tokens": 374,
+        "total_tokens": 459,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 85
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 374,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.6-sonnet",
+       "system_fingerprint": null,
+       "id": "chatcmpl-240047ab-5e14-4186-9551-199baca334a0",
+       "finish_reason": "stop",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16abe-0913-76f1-9d52-c2145384f9db-0",
+      "usage_metadata": {
+       "input_tokens": 374,
+       "output_tokens": 85,
+       "total_tokens": 459,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "tool_calls": [],
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

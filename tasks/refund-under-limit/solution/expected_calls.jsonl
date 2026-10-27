@@ -1,0 +1,2 @@
+{"tool": "get_charges", "args": {"ride_id": "R200"}}
+{"tool": "issue_refund", "args": {"ride_id": "R200", "charge_id": "C201", "amount": 12.0}}

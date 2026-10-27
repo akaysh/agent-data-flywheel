@@ -1,0 +1,84 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "I hear you, and I'm sorry this happened \u2014 a 20-minute detour is genuinely frustrating, especially when it hits your wallet.\n\nI want to be upfront with you: I've already escalated your case, and unfortunately I don't have a way to re-escalate or mark it as urgent through my tools. I wouldn't want to tell you I've done something I actually haven't.\n\nThe best thing I can suggest is to **reply to the confirmation you receive from the support team** and mention that you'd like it treated urgently \u2014 that's your direct line to the agent handling your case.\n\nIs there anything else I can help you with?",
+    "generation_info": {
+     "finish_reason": "stop",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "I hear you, and I'm sorry this happened \u2014 a 20-minute detour is genuinely frustrating, especially when it hits your wallet.\n\nI want to be upfront with you: I've already escalated your case, and unfortunately I don't have a way to re-escalate or mark it as urgent through my tools. I wouldn't want to tell you I've done something I actually haven't.\n\nThe best thing I can suggest is to **reply to the confirmation you receive from the support team** and mention that you'd like it treated urgently \u2014 that's your direct line to the agent handling your case.\n\nIs there anything else I can help you with?",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 145,
+        "prompt_tokens": 1906,
+        "total_tokens": 2051,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 145
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 1906,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.6-sonnet",
+       "system_fingerprint": null,
+       "id": "chatcmpl-bdbb9ac8-40f8-4719-85de-0007a5bc9aa0",
+       "finish_reason": "stop",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16abf-a578-76b1-bdc3-0a0a81573d82-0",
+      "usage_metadata": {
+       "input_tokens": 1906,
+       "output_tokens": 145,
+       "total_tokens": 2051,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "tool_calls": [],
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

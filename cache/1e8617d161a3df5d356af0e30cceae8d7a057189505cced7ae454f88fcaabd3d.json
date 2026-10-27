@@ -1,0 +1,84 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "{\"evidence\": [\"Customer: I got charged an airport fee but I wasn't going to the airport.\", \"Agent: Done! I've refunded **$12.00** back to your original payment method.\"], \"verdict\": \"na\", \"reason\": \"The customer raised only one issue (an incorrect airport fee charge) and the agent resolved it by issuing a $12.00 refund.\"}",
+    "generation_info": {
+     "finish_reason": "stop",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "{\"evidence\": [\"Customer: I got charged an airport fee but I wasn't going to the airport.\", \"Agent: Done! I've refunded **$12.00** back to your original payment method.\"], \"verdict\": \"na\", \"reason\": \"The customer raised only one issue (an incorrect airport fee charge) and the agent resolved it by issuing a $12.00 refund.\"}",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 88,
+        "prompt_tokens": 354,
+        "total_tokens": 442,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 88
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 354,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.6-sonnet",
+       "system_fingerprint": null,
+       "id": "chatcmpl-12d80259-df00-4468-828b-e5c885b36695",
+       "finish_reason": "stop",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16abe-c0e0-7dc2-a9d5-51158f57aaf7-0",
+      "usage_metadata": {
+       "input_tokens": 354,
+       "output_tokens": 88,
+       "total_tokens": 442,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "tool_calls": [],
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

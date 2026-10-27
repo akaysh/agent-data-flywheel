@@ -1,0 +1,7 @@
+{
+  "goal": "Get the $12 airport fee refunded.",
+  "hidden_facts": [
+    "Ride went downtown to Market St."
+  ],
+  "behavior": "Polite, gives details when asked."
+}

@@ -1,0 +1,84 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "Here's what I've done:\n\n- \u2705 **Messaged Leo** directly about your bag\n- \u2705 **Opened a lost item ticket** (Ticket #LI-R900)\n\n**What happens next:** Leo will be notified and should respond shortly. You'll receive an update through the app or email once he replies. If you don't hear back soon, feel free to reach out again and we can follow up! \ud83e\udd1e",
+    "generation_info": {
+     "finish_reason": "stop",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "Here's what I've done:\n\n- \u2705 **Messaged Leo** directly about your bag\n- \u2705 **Opened a lost item ticket** (Ticket #LI-R900)\n\n**What happens next:** Leo will be notified and should respond shortly. You'll receive an update through the app or email once he replies. If you don't hear back soon, feel free to reach out again and we can follow up! \ud83e\udd1e",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 104,
+        "prompt_tokens": 1754,
+        "total_tokens": 1858,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 104
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 1754,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.6-sonnet",
+       "system_fingerprint": null,
+       "id": "chatcmpl-fc88777e-fefa-408c-a82f-43e4e7d9904b",
+       "finish_reason": "stop",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16abf-94cf-74d2-934a-1c7eb5d3fb7e-0",
+      "usage_metadata": {
+       "input_tokens": 1754,
+       "output_tokens": 104,
+       "total_tokens": 1858,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "tool_calls": [],
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

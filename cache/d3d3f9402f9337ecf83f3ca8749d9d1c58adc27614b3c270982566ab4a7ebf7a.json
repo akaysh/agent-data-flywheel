@@ -1,0 +1,84 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "Got it! I've opened a lost item ticket for your backpack (Ticket #LI-R900). \n\nOur team will follow up with Leo to locate your backpack. You should hear back within 24 hours. Keep checking your RideCo messages for updates!",
+    "generation_info": {
+     "finish_reason": "stop",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "Got it! I've opened a lost item ticket for your backpack (Ticket #LI-R900). \n\nOur team will follow up with Leo to locate your backpack. You should hear back within 24 hours. Keep checking your RideCo messages for updates!",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 63,
+        "prompt_tokens": 1858,
+        "total_tokens": 1921,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 63
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 1858,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.5-haiku",
+       "system_fingerprint": null,
+       "id": "chatcmpl-34c88b41-3dca-4b11-8dc5-b221c8ddddc1",
+       "finish_reason": "stop",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16abf-0cb6-7121-8c8f-2f8ab8c24432-0",
+      "usage_metadata": {
+       "input_tokens": 1858,
+       "output_tokens": 63,
+       "total_tokens": 1921,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "tool_calls": [],
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

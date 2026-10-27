@@ -1,0 +1,84 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "```json\n{\"evidence\": [\n  \"Customer: You charged me TWICE for the same ride. $68 each. Fix this now.\",\n  \"Customer: Email me the case number so I have proof this conversation happened.\",\n  \"I don't have the ability to send emails or see a case reference number from the escalation \u2014 so I can't do either of those things\"\n], \"verdict\": \"fail\", \"reason\": \"The customer raised two distinct issues: the duplicate charge (handled via escalation) and a request for a case number/email confirmation, which the agent explicitly could not fulfill and offered no alternative action beyond suggesting a screenshot.\"}\n```",
+    "generation_info": {
+     "finish_reason": "stop",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "```json\n{\"evidence\": [\n  \"Customer: You charged me TWICE for the same ride. $68 each. Fix this now.\",\n  \"Customer: Email me the case number so I have proof this conversation happened.\",\n  \"I don't have the ability to send emails or see a case reference number from the escalation \u2014 so I can't do either of those things\"\n], \"verdict\": \"fail\", \"reason\": \"The customer raised two distinct issues: the duplicate charge (handled via escalation) and a request for a case number/email confirmation, which the agent explicitly could not fulfill and offered no alternative action beyond suggesting a screenshot.\"}\n```",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 144,
+        "prompt_tokens": 1041,
+        "total_tokens": 1185,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 144
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 1041,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.6-sonnet",
+       "system_fingerprint": null,
+       "id": "chatcmpl-839f0405-c134-4209-9e0f-fd170e292f51",
+       "finish_reason": "stop",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16abe-ad3b-71d1-94cc-c028fc452692-0",
+      "usage_metadata": {
+       "input_tokens": 1041,
+       "output_tokens": 144,
+       "total_tokens": 1185,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "tool_calls": [],
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

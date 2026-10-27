@@ -1,0 +1,84 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "{\"evidence\": [\"They'll get to it today and can approve the $30 refund once they verify what happened.\", \"They'll reach out with a resolution on that $30 refund.\", \"They have all the details and will investigate the route to approve that $30 refund.\"], \"verdict\": \"fail\", \"reason\": \"The agent repeatedly implies the human team will approve/issue the $30 refund, which is a promised outcome the agent cannot guarantee, going beyond what escalate_to_human actually does.\"}",
+    "generation_info": {
+     "finish_reason": "stop",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "{\"evidence\": [\"They'll get to it today and can approve the $30 refund once they verify what happened.\", \"They'll reach out with a resolution on that $30 refund.\", \"They have all the details and will investigate the route to approve that $30 refund.\"], \"verdict\": \"fail\", \"reason\": \"The agent repeatedly implies the human team will approve/issue the $30 refund, which is a promised outcome the agent cannot guarantee, going beyond what escalate_to_human actually does.\"}",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 116,
+        "prompt_tokens": 998,
+        "total_tokens": 1114,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 116
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 998,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.6-sonnet",
+       "system_fingerprint": null,
+       "id": "chatcmpl-081efa1f-d0f1-4814-ac61-3e4cf6df81f7",
+       "finish_reason": "stop",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16abe-02be-7612-aa96-06ef35243720-0",
+      "usage_metadata": {
+       "input_tokens": 998,
+       "output_tokens": 116,
+       "total_tokens": 1114,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "tool_calls": [],
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

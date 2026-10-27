@@ -1,0 +1,93 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "Good news \u2014 it looks like you only have one recent ride, so I can go straight to the details. Let me grab the full charge breakdown for you!",
+    "generation_info": {
+     "finish_reason": "tool_calls",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "Good news \u2014 it looks like you only have one recent ride, so I can go straight to the details. Let me grab the full charge breakdown for you!",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 89,
+        "prompt_tokens": 1294,
+        "total_tokens": 1383,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 89
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 1294,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.6-sonnet",
+       "system_fingerprint": null,
+       "id": "chatcmpl-e7f64c7b-7552-4b78-8402-3a745ebc73c1",
+       "finish_reason": "tool_calls",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16abf-9c4c-7a73-9bce-c44f83e95d4a-0",
+      "tool_calls": [
+       {
+        "name": "get_charges",
+        "args": {
+         "ride_id": "R100"
+        },
+        "id": "tooluse_f0myFc3qJMLCtt22BgYoN7",
+        "type": "tool_call"
+       }
+      ],
+      "usage_metadata": {
+       "input_tokens": 1294,
+       "output_tokens": 89,
+       "total_tokens": 1383,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

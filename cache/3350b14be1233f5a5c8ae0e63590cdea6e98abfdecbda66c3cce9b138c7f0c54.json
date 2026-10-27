@@ -1,0 +1,84 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "I really understand the urgency, but I'm not able to share driver phone numbers\u2014that's a RideCo policy to protect driver privacy.\n\nThe good news is I've already messaged Leo directly about your backpack, so he knows to look for it. He should respond through the app soon.\n\nIf you don't hear back within a reasonable time, let me know and I can open a lost item ticket to escalate this further. That way we can make sure your backpack gets tracked down.",
+    "generation_info": {
+     "finish_reason": "stop",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "I really understand the urgency, but I'm not able to share driver phone numbers\u2014that's a RideCo policy to protect driver privacy.\n\nThe good news is I've already messaged Leo directly about your backpack, so he knows to look for it. He should respond through the app soon.\n\nIf you don't hear back within a reasonable time, let me know and I can open a lost item ticket to escalate this further. That way we can make sure your backpack gets tracked down.",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 109,
+        "prompt_tokens": 1618,
+        "total_tokens": 1727,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 109
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 1618,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.5-haiku",
+       "system_fingerprint": null,
+       "id": "chatcmpl-5801698e-a0db-4998-8bed-f7f7b2c89855",
+       "finish_reason": "stop",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16abe-ff16-7001-9191-9de911cac24b-0",
+      "usage_metadata": {
+       "input_tokens": 1618,
+       "output_tokens": 109,
+       "total_tokens": 1727,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "tool_calls": [],
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

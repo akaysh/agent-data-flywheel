@@ -1,0 +1,5 @@
+{"tool": "get_account", "args": {}}
+{"tool": "update_account", "args": {"field": "email", "value": "jo.new@example.com"}}
+{"tool": "list_recent_rides", "args": {}}
+{"tool": "create_lost_item_ticket", "args": {"ride_id": "R1100", "item": "brown leather wallet"}}
+{"tool": "contact_driver", "args": {"ride_id": "R1100"}}

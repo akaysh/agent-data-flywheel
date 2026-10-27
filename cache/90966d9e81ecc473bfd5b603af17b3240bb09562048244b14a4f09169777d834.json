@@ -1,0 +1,93 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "I can see it \u2014 there are indeed **two $68 fare charges** (C300 and C301) on ride R300, totalling **$136**. That's a billing error and the duplicate charge of **$68 is above our $25 self-serve refund limit**, so I need to send this to our billing team for review.",
+    "generation_info": {
+     "finish_reason": "tool_calls",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "I can see it \u2014 there are indeed **two $68 fare charges** (C300 and C301) on ride R300, totalling **$136**. That's a billing error and the duplicate charge of **$68 is above our $25 self-serve refund limit**, so I need to send this to our billing team for review.",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 195,
+        "prompt_tokens": 1499,
+        "total_tokens": 1694,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 195
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 1499,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.6-sonnet",
+       "system_fingerprint": null,
+       "id": "chatcmpl-d9e0858f-d074-43f3-a660-b90283cbc8cd",
+       "finish_reason": "tool_calls",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16abf-d192-7c82-b918-a666d97b7f5e-0",
+      "tool_calls": [
+       {
+        "name": "escalate_to_human",
+        "args": {
+         "reason": "Customer was charged twice ($68 each, charges C300 and C301) for the same ride R300 (SFO \u2192 Palo Alto, 2026-11-01). Duplicate charge of $68 needs to be refunded \u2014 amount exceeds $25 agent limit."
+        },
+        "id": "tooluse_bqycBIKPt5V2vjNXlpb3Zg",
+        "type": "tool_call"
+       }
+      ],
+      "usage_metadata": {
+       "input_tokens": 1499,
+       "output_tokens": 195,
+       "total_tokens": 1694,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

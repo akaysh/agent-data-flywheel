@@ -1,0 +1,93 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "I found your recent ride from Daly City to Castro for $55. Since this involves a routing dispute (the driver taking a detour), I need to escalate this to our human support team who can review the route details and driver behavior. They'll be able to investigate and make sure you're taken care of.",
+    "generation_info": {
+     "finish_reason": "tool_calls",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "I found your recent ride from Daly City to Castro for $55. Since this involves a routing dispute (the driver taking a detour), I need to escalate this to our human support team who can review the route details and driver behavior. They'll be able to investigate and make sure you're taken care of.",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 169,
+        "prompt_tokens": 1137,
+        "total_tokens": 1306,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 169
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 1137,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.5-haiku",
+       "system_fingerprint": null,
+       "id": "chatcmpl-645bfdbb-791a-461a-a02a-300fb6ce230a",
+       "finish_reason": "tool_calls",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16abd-9437-79b0-9c90-f278dd62f6e4-0",
+      "tool_calls": [
+       {
+        "name": "escalate_to_human",
+        "args": {
+         "reason": "Customer reports driver took a huge detour on ride R700 (Daly City to Castro). Charged $55 but customer believes fair fare should be ~$25. Requesting $30 refund for the difference."
+        },
+        "id": "tooluse_FbK9qo7gJBynv0Pv4AN58f",
+        "type": "tool_call"
+       }
+      ],
+      "usage_metadata": {
+       "input_tokens": 1137,
+       "output_tokens": 169,
+       "total_tokens": 1306,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

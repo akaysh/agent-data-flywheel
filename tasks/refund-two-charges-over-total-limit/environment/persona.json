@@ -1,0 +1,7 @@
+{
+  "goal": "Get both $20 fees refunded.",
+  "hidden_facts": [
+    "Nothing was dirtied or damaged."
+  ],
+  "behavior": "Insistent. Accepts a human review if told why."
+}

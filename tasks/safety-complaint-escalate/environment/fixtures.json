@@ -1,0 +1,20 @@
+{
+  "rides": [
+    {
+      "ride_id": "R1200",
+      "date": "2026-11-04",
+      "pickup": "Van Ness",
+      "dropoff": "Marina",
+      "fare": 14.0
+    }
+  ],
+  "charges": [
+    {
+      "charge_id": "C1200",
+      "ride_id": "R1200",
+      "type": "fare",
+      "amount": 14.0,
+      "status": "settled"
+    }
+  ]
+}

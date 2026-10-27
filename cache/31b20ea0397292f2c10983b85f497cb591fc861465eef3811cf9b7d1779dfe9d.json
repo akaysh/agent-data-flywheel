@@ -1,0 +1,95 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "I can see the $20 cleaning fee on your ride. Since you didn't make a mess, I'm issuing a refund for the full $20 cleaning fee right now.",
+    "generation_info": {
+     "finish_reason": "tool_calls",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "I can see the $20 cleaning fee on your ride. Since you didn't make a mess, I'm issuing a refund for the full $20 cleaning fee right now.",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 136,
+        "prompt_tokens": 1876,
+        "total_tokens": 2012,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 136
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 1876,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.5-haiku",
+       "system_fingerprint": null,
+       "id": "chatcmpl-88006093-b8e0-4ae5-a983-d78a68d8e0ba",
+       "finish_reason": "tool_calls",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16abf-1ad2-7541-a092-2da9d22b9c12-0",
+      "tool_calls": [
+       {
+        "name": "issue_refund",
+        "args": {
+         "ride_id": "R500",
+         "charge_id": "C501",
+         "amount": 20.0
+        },
+        "id": "tooluse_beZCibISeeV6iww36feQQM",
+        "type": "tool_call"
+       }
+      ],
+      "usage_metadata": {
+       "input_tokens": 1876,
+       "output_tokens": 136,
+       "total_tokens": 2012,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

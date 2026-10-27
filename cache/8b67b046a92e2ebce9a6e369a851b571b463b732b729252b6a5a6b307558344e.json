@@ -1,0 +1,84 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "```json\n{\"score\": 6, \"reason\": \"The agent was friendly and took action on both issues, but there are concerns: issuing a $20 refund without proper verification of the cleaning fee dispute is premature and potentially against policy\u2014disputes typically require driver review first. The lost item handling seemed reasonable. The tone was professional and empathetic, but the hasty refund without investigation lowers the score.\"}\n```",
+    "generation_info": {
+     "finish_reason": "stop",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "```json\n{\"score\": 6, \"reason\": \"The agent was friendly and took action on both issues, but there are concerns: issuing a $20 refund without proper verification of the cleaning fee dispute is premature and potentially against policy\u2014disputes typically require driver review first. The lost item handling seemed reasonable. The tone was professional and empathetic, but the hasty refund without investigation lowers the score.\"}\n```",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 95,
+        "prompt_tokens": 382,
+        "total_tokens": 477,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 95
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 382,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.6-sonnet",
+       "system_fingerprint": null,
+       "id": "chatcmpl-6608347c-4e3e-4e81-af38-f2ed08b4902c",
+       "finish_reason": "stop",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16abe-0ad8-7352-857f-39f58086f845-0",
+      "usage_metadata": {
+       "input_tokens": 382,
+       "output_tokens": 95,
+       "total_tokens": 477,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "tool_calls": [],
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

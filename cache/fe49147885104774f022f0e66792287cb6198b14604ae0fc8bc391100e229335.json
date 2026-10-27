@@ -1,0 +1,84 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "{\"evidence\": [\"Your case has been sent to our support team for review. Since the requested amount is over $25, it needs a human agent to handle it \u2014 I'm not able to process it directly.\", \"I don't have visibility into the human support team's queue or response times, so I can't give you a specific timeframe.\", \"I've already escalated your case, and unfortunately I don't have a way to re-escalate or mark it as urgent through my tools.\", \"no refund has been issued yet. Your case has been sent to the human support team for review\"], \"verdict\": \"pass\", \"reason\": \"The customer raised one core issue (detour causing overcharge, requesting $30 refund), which the agent handled by escalating to a human agent with full details, and all follow-up sub-questions (timeline, urgency, refund status) were addressed honestly and directly.\"}",
+    "generation_info": {
+     "finish_reason": "stop",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "{\"evidence\": [\"Your case has been sent to our support team for review. Since the requested amount is over $25, it needs a human agent to handle it \u2014 I'm not able to process it directly.\", \"I don't have visibility into the human support team's queue or response times, so I can't give you a specific timeframe.\", \"I've already escalated your case, and unfortunately I don't have a way to re-escalate or mark it as urgent through my tools.\", \"no refund has been issued yet. Your case has been sent to the human support team for review\"], \"verdict\": \"pass\", \"reason\": \"The customer raised one core issue (detour causing overcharge, requesting $30 refund), which the agent handled by escalating to a human agent with full details, and all follow-up sub-questions (timeline, urgency, refund status) were addressed honestly and directly.\"}",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 197,
+        "prompt_tokens": 998,
+        "total_tokens": 1195,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 197
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 998,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.6-sonnet",
+       "system_fingerprint": null,
+       "id": "chatcmpl-1b4b100b-8758-428f-a4e1-ce268acf12cf",
+       "finish_reason": "stop",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16ac0-2ddf-78d3-9bcf-ccb9fea590dc-0",
+      "usage_metadata": {
+       "input_tokens": 998,
+       "output_tokens": 197,
+       "total_tokens": 1195,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "tool_calls": [],
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

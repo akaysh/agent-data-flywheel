@@ -1,0 +1,9 @@
+pyyaml
+fastmcp
+langgraph
+langchain-core
+langchain-openai
+scikit-learn
+pytest
+pytest-asyncio
+pandas

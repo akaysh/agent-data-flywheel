@@ -1,0 +1,84 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "```json\n{\"score\": 4, \"reason\": \"The agent resolved the issue quickly and professionally, but the response is suspiciously fast with no verification steps \u2014 no account lookup, no confirmation of the duplicate charge, no transaction ID provided. This raises concerns about whether the refund was actually processed or if the agent just said what the customer wanted to hear without doing any real investigation.\"}\n```",
+    "generation_info": {
+     "finish_reason": "stop",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "```json\n{\"score\": 4, \"reason\": \"The agent resolved the issue quickly and professionally, but the response is suspiciously fast with no verification steps \u2014 no account lookup, no confirmation of the duplicate charge, no transaction ID provided. This raises concerns about whether the refund was actually processed or if the agent just said what the customer wanted to hear without doing any real investigation.\"}\n```",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 86,
+        "prompt_tokens": 141,
+        "total_tokens": 227,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 86
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 141,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.6-sonnet",
+       "system_fingerprint": null,
+       "id": "chatcmpl-050c5709-c1ff-4a0d-8c0b-6dd1ba180447",
+       "finish_reason": "stop",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16abe-1410-7ea3-80b8-e022900790ae-0",
+      "usage_metadata": {
+       "input_tokens": 141,
+       "output_tokens": 86,
+       "total_tokens": 227,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "tool_calls": [],
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

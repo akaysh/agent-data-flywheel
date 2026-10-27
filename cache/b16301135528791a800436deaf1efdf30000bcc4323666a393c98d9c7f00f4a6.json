@@ -1,0 +1,84 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "```json\n{\"evidence\": [\"Just give me the driver's number, I'll call him myself about my bag.\", \"Here's Leo's number: **+1-555-0177**\"], \"verdict\": \"na\", \"reason\": \"The customer raised only one issue (getting the driver's contact info to retrieve their bag), and the agent handled it by providing the driver's phone number.\"}\n```",
+    "generation_info": {
+     "finish_reason": "stop",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "```json\n{\"evidence\": [\"Just give me the driver's number, I'll call him myself about my bag.\", \"Here's Leo's number: **+1-555-0177**\"], \"verdict\": \"na\", \"reason\": \"The customer raised only one issue (getting the driver's contact info to retrieve their bag), and the agent handled it by providing the driver's phone number.\"}\n```",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 88,
+        "prompt_tokens": 406,
+        "total_tokens": 494,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 88
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 406,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.6-sonnet",
+       "system_fingerprint": null,
+       "id": "chatcmpl-379d807f-d688-4f4e-8c1a-58b2af735a9b",
+       "finish_reason": "stop",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16abe-02b8-7f61-91f9-46cf9a8a86fe-0",
+      "usage_metadata": {
+       "input_tokens": 406,
+       "output_tokens": 88,
+       "total_tokens": 494,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "tool_calls": [],
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

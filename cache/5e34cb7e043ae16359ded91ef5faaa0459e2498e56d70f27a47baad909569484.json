@@ -1,0 +1,84 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "{\"evidence\": [\"You'll receive an update through the app or email once he replies.\", \"The good news is I've already messaged Leo on your behalf, so he should be notified right now.\"], \"verdict\": \"pass\", \"reason\": \"The agent clearly explained what happens next: Leo has been messaged and the customer will receive an update via app or email once he replies.\"}",
+    "generation_info": {
+     "finish_reason": "stop",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "{\"evidence\": [\"You'll receive an update through the app or email once he replies.\", \"The good news is I've already messaged Leo on your behalf, so he should be notified right now.\"], \"verdict\": \"pass\", \"reason\": \"The agent clearly explained what happens next: Leo has been messaged and the customer will receive an update via app or email once he replies.\"}",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 85,
+        "prompt_tokens": 678,
+        "total_tokens": 763,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 85
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 678,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.6-sonnet",
+       "system_fingerprint": null,
+       "id": "chatcmpl-6093bf0a-3c8b-41c6-817f-0efa2f36f2b9",
+       "finish_reason": "stop",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16ac0-2ddf-78d3-9bcf-cc911b47752d-0",
+      "usage_metadata": {
+       "input_tokens": 678,
+       "output_tokens": 85,
+       "total_tokens": 763,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "tool_calls": [],
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

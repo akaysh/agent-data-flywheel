@@ -1,0 +1,84 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "I can't promise the full $30\u2014that's up to the specialist reviewing your case. They'll look at the actual route taken and decide what's fair based on what happened.\n\nYour case is in the queue for review now. You don't need me to follow up; the team will contact you directly once they've investigated. Just keep an eye on your email or app notifications for their response.",
+    "generation_info": {
+     "finish_reason": "stop",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "I can't promise the full $30\u2014that's up to the specialist reviewing your case. They'll look at the actual route taken and decide what's fair based on what happened.\n\nYour case is in the queue for review now. You don't need me to follow up; the team will contact you directly once they've investigated. Just keep an eye on your email or app notifications for their response.",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 85,
+        "prompt_tokens": 1964,
+        "total_tokens": 2049,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 85
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 1964,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.5-haiku",
+       "system_fingerprint": null,
+       "id": "chatcmpl-9a21e666-ceb8-42f5-919c-e2196647c0a7",
+       "finish_reason": "stop",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16abf-0812-7221-b696-dbccf1f3a4d9-0",
+      "usage_metadata": {
+       "input_tokens": 1964,
+       "output_tokens": 85,
+       "total_tokens": 2049,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "tool_calls": [],
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

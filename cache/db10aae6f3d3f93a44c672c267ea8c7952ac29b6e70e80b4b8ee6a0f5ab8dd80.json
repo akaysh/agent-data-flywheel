@@ -1,0 +1,84 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "I completely understand your frustration \u2014 a detour that doubles your fare is really not okay!\n\nUnfortunately, I don't have visibility into the human support team's queue or response times, so I can't give you a specific timeframe. I'm sorry I can't be more precise on that.\n\nWhat I *can* tell you is that your case is already queued and flagged with the full details of the detour and fare discrepancy, so the agent picking it up will have everything they need to act quickly.\n\nIs there anything else I can help you with in the meantime?",
+    "generation_info": {
+     "finish_reason": "stop",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "I completely understand your frustration \u2014 a detour that doubles your fare is really not okay!\n\nUnfortunately, I don't have visibility into the human support team's queue or response times, so I can't give you a specific timeframe. I'm sorry I can't be more precise on that.\n\nWhat I *can* tell you is that your case is already queued and flagged with the full details of the detour and fare discrepancy, so the agent picking it up will have everything they need to act quickly.\n\nIs there anything else I can help you with in the meantime?",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 127,
+        "prompt_tokens": 1725,
+        "total_tokens": 1852,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 127
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 1725,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.6-sonnet",
+       "system_fingerprint": null,
+       "id": "chatcmpl-1978e968-3c8f-4f3a-b63f-ef7e5335dc58",
+       "finish_reason": "stop",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16abf-988b-7702-b613-ad57fff05f91-0",
+      "usage_metadata": {
+       "input_tokens": 1725,
+       "output_tokens": 127,
+       "total_tokens": 1852,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "tool_calls": [],
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

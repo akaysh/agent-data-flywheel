@@ -1,0 +1,84 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "I totally understand\u2014losing your phone is stressful! The good news is that Sam will check the car and should get back to you quickly. Lost items are often found right away in rideshare cars.\n\nIn the meantime, if you need to reach Sam or follow up, just let me know and I can send another message. Fingers crossed it turns up! \ud83e\udd1e",
+    "generation_info": {
+     "finish_reason": "stop",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "I totally understand\u2014losing your phone is stressful! The good news is that Sam will check the car and should get back to you quickly. Lost items are often found right away in rideshare cars.\n\nIn the meantime, if you need to reach Sam or follow up, just let me know and I can send another message. Fingers crossed it turns up! \ud83e\udd1e",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 84,
+        "prompt_tokens": 1697,
+        "total_tokens": 1781,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 84
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 1697,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.5-haiku",
+       "system_fingerprint": null,
+       "id": "chatcmpl-f39fd141-fc62-4c45-8b74-066c116a42fe",
+       "finish_reason": "stop",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16abf-0d81-70d0-a3e3-5a36f74909ec-0",
+      "usage_metadata": {
+       "input_tokens": 1697,
+       "output_tokens": 84,
+       "total_tokens": 1781,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "tool_calls": [],
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

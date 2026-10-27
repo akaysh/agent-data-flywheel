@@ -1,0 +1,94 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "No risk flags on your account, so we're good to go! Updating your phone number now.",
+    "generation_info": {
+     "finish_reason": "tool_calls",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "No risk flags on your account, so we're good to go! Updating your phone number now.",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 98,
+        "prompt_tokens": 1096,
+        "total_tokens": 1194,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 98
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 1096,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.6-sonnet",
+       "system_fingerprint": null,
+       "id": "chatcmpl-1287cbb5-8e80-45bb-88e8-df3cc901fe5d",
+       "finish_reason": "tool_calls",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16abf-6f02-7eb3-b062-ee5d90cae904-0",
+      "tool_calls": [
+       {
+        "name": "update_account",
+        "args": {
+         "field": "phone",
+         "value": "+1-555-0142"
+        },
+        "id": "tooluse_SUFce2qkSWLWj1NBRfdYmU",
+        "type": "tool_call"
+       }
+      ],
+      "usage_metadata": {
+       "input_tokens": 1096,
+       "output_tokens": 98,
+       "total_tokens": 1194,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

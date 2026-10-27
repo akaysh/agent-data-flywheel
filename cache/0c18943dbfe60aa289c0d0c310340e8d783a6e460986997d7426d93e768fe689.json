@@ -1,0 +1,84 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "{\"evidence\": [\n  \"Customer: My driver took a huge detour, the ride was $55 instead of $25. I want the difference back.\",\n  \"Customer: I need this resolved now. Can you just process a $30 refund for me today?\",\n  \"Customer: But if I don't hear back by end of day, I'm disputing this with my credit card company.\",\n  \"{\\\"tool\\\": \\\"escalate_to_human\\\", \\\"args\\\": {\\\"reason\\\": \\\"Customer reports driver took a huge detour on ride R700 (Daly City to Castro). Charged $55 but customer believes fair fare should be ~$25. Requesting $30 refund for the difference.\\\"}}\"\n],\n\"verdict\": \"na\",\n\"reason\": \"The customer raised only one issue (overcharge due to detour/refund request), and the agent handled it by escalating to a human team with full details and keeping the customer informed throughout.\"}",
+    "generation_info": {
+     "finish_reason": "stop",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "{\"evidence\": [\n  \"Customer: My driver took a huge detour, the ride was $55 instead of $25. I want the difference back.\",\n  \"Customer: I need this resolved now. Can you just process a $30 refund for me today?\",\n  \"Customer: But if I don't hear back by end of day, I'm disputing this with my credit card company.\",\n  \"{\\\"tool\\\": \\\"escalate_to_human\\\", \\\"args\\\": {\\\"reason\\\": \\\"Customer reports driver took a huge detour on ride R700 (Daly City to Castro). Charged $55 but customer believes fair fare should be ~$25. Requesting $30 refund for the difference.\\\"}}\"\n],\n\"verdict\": \"na\",\n\"reason\": \"The customer raised only one issue (overcharge due to detour/refund request), and the agent handled it by escalating to a human team with full details and keeping the customer informed throughout.\"}",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 222,
+        "prompt_tokens": 940,
+        "total_tokens": 1162,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 222
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 940,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.6-sonnet",
+       "system_fingerprint": null,
+       "id": "chatcmpl-8506ee36-0e67-4a34-80f8-f7ab2a515fe2",
+       "finish_reason": "stop",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16abe-02bf-7cf2-ac3a-888f027fb329-0",
+      "usage_metadata": {
+       "input_tokens": 940,
+       "output_tokens": 222,
+       "total_tokens": 1162,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "tool_calls": [],
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

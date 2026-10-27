@@ -1,0 +1,84 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "Here's a full summary of everything done in this conversation:\n\n1. **Email updated** \u2705 \u2014 Your email is now **jo.new@example.com**.\n2. **Lost item ticket opened** \u2705 \u2014 Ticket **LI-R1100** has been created for your wallet from last night's Castro \u2192 Marina ride.\n3. **Driver contacted** \u2705 \u2014 A message has been sent to your driver Mia asking her to check for your wallet.\n\n**What happens next:** Mia will be notified and can respond through the app. You'll hear back once she replies. Fingers crossed she finds it! \ud83e\udd1e",
+    "generation_info": {
+     "finish_reason": "stop",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "Here's a full summary of everything done in this conversation:\n\n1. **Email updated** \u2705 \u2014 Your email is now **jo.new@example.com**.\n2. **Lost item ticket opened** \u2705 \u2014 Ticket **LI-R1100** has been created for your wallet from last night's Castro \u2192 Marina ride.\n3. **Driver contacted** \u2705 \u2014 A message has been sent to your driver Mia asking her to check for your wallet.\n\n**What happens next:** Mia will be notified and can respond through the app. You'll hear back once she replies. Fingers crossed she finds it! \ud83e\udd1e",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 149,
+        "prompt_tokens": 1980,
+        "total_tokens": 2129,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 149
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 1980,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.6-sonnet",
+       "system_fingerprint": null,
+       "id": "chatcmpl-7a94721d-e081-4743-b415-160d28906a5d",
+       "finish_reason": "stop",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16abf-8886-7f40-b5a6-c2e829c9f41b-0",
+      "usage_metadata": {
+       "input_tokens": 1980,
+       "output_tokens": 149,
+       "total_tokens": 2129,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "tool_calls": [],
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

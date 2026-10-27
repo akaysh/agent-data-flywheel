@@ -1,0 +1,21 @@
+{
+  "rides": [
+    {
+      "ride_id": "R100",
+      "date": "2026-11-02",
+      "pickup": "Mission",
+      "dropoff": "SoMa",
+      "fare": 31.4,
+      "prime_time_pct": 50
+    }
+  ],
+  "charges": [
+    {
+      "charge_id": "C100",
+      "ride_id": "R100",
+      "type": "fare",
+      "amount": 31.4,
+      "status": "settled"
+    }
+  ]
+}

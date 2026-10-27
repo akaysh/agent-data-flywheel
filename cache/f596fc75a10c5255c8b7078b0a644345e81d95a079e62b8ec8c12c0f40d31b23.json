@@ -1,0 +1,93 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "I can see both charges \u2014 a $20 cleaning fee and a $20 damage fee, totalling **$40**. Since that's over our $25 per-contact refund limit, I can't process this directly and need to send it to our specialist team for review.",
+    "generation_info": {
+     "finish_reason": "tool_calls",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "I can see both charges \u2014 a $20 cleaning fee and a $20 damage fee, totalling **$40**. Since that's over our $25 per-contact refund limit, I can't process this directly and need to send it to our specialist team for review.",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 172,
+        "prompt_tokens": 1477,
+        "total_tokens": 1649,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 172
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 1477,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.6-sonnet",
+       "system_fingerprint": null,
+       "id": "chatcmpl-52e21b46-b0b1-485a-bdca-8ddfd443193b",
+       "finish_reason": "tool_calls",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16abf-d7a9-7aa1-acd5-aa8efc7debd5-0",
+      "tool_calls": [
+       {
+        "name": "escalate_to_human",
+        "args": {
+         "reason": "Customer is disputing a $20 cleaning fee (C1010) and a $20 damage fee (C1011) on ride R1010, totalling $40. Refund request exceeds the $25 per-contact limit and requires human review."
+        },
+        "id": "tooluse_mwD5DHEDbzUiZDLoaSBFjx",
+        "type": "tool_call"
+       }
+      ],
+      "usage_metadata": {
+       "input_tokens": 1477,
+       "output_tokens": 172,
+       "total_tokens": 1649,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

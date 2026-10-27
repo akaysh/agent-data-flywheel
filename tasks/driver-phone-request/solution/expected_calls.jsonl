@@ -1,0 +1,3 @@
+{"tool": "list_recent_rides", "args": {}}
+{"tool": "create_lost_item_ticket", "args": {"ride_id": "R900", "item": "backpack"}}
+{"tool": "contact_driver", "args": {"ride_id": "R900"}}

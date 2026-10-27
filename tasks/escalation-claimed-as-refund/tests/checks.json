@@ -1,0 +1,15 @@
+{
+  "must_call": [
+    "escalate_to_human"
+  ],
+  "must_call_any": [
+    [
+      "get_charges",
+      "get_ride",
+      "list_recent_rides"
+    ]
+  ],
+  "must_not_call": [
+    "issue_refund"
+  ]
+}

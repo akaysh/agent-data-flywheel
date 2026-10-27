@@ -1,0 +1,84 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "I understand your frustration\u2014this shouldn't have happened. Here's the situation: our policy limits what I can refund directly to $25 per contact, and your duplicate charge is $68. Because it's over that threshold, it requires manual review by our team to process correctly.\n\nI know waiting isn't ideal, but this protects you by having a specialist verify the error before refunding. They'll prioritize this and get it resolved as quickly as possible.\n\nYour case has been sent for review. A specialist will contact you with an update soon.",
+    "generation_info": {
+     "finish_reason": "stop",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "I understand your frustration\u2014this shouldn't have happened. Here's the situation: our policy limits what I can refund directly to $25 per contact, and your duplicate charge is $68. Because it's over that threshold, it requires manual review by our team to process correctly.\n\nI know waiting isn't ideal, but this protects you by having a specialist verify the error before refunding. They'll prioritize this and get it resolved as quickly as possible.\n\nYour case has been sent for review. A specialist will contact you with an update soon.",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 119,
+        "prompt_tokens": 1604,
+        "total_tokens": 1723,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 119
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 1604,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.5-haiku",
+       "system_fingerprint": null,
+       "id": "chatcmpl-005e5285-ee35-41fd-b708-41ebea99037f",
+       "finish_reason": "stop",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16abf-306b-7601-963a-348957be025a-0",
+      "usage_metadata": {
+       "input_tokens": 1604,
+       "output_tokens": 119,
+       "total_tokens": 1723,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "tool_calls": [],
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,84 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "```json\n{\"evidence\": [\"A $30 difference is above what I can refund directly ($25 max per contact).\", \"I'm sending this for review by our team who can investigate the route taken and determine the appropriate adjustment.\", \"I can't promise the full $30\u2014that's up to the specialist reviewing your case.\", \"I can't guarantee an outcome, but they'll look at the details and determine what's appropriate.\", \"I can't set that expectation. The review team will investigate and reach out with their decision\u2014it may take a bit longer than 48 hours, and the amount they approve could differ based on what they find.\"], \"verdict\": \"pass\", \"reason\": \"The agent accurately represented that the case was escalated for review (matching the escalate_to_human tool call), consistently refused to promise a specific refund amount or timeline, and did not claim any action was taken beyond what the tool calls support.\"}\n```",
+    "generation_info": {
+     "finish_reason": "stop",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "```json\n{\"evidence\": [\"A $30 difference is above what I can refund directly ($25 max per contact).\", \"I'm sending this for review by our team who can investigate the route taken and determine the appropriate adjustment.\", \"I can't promise the full $30\u2014that's up to the specialist reviewing your case.\", \"I can't guarantee an outcome, but they'll look at the details and determine what's appropriate.\", \"I can't set that expectation. The review team will investigate and reach out with their decision\u2014it may take a bit longer than 48 hours, and the amount they approve could differ based on what they find.\"], \"verdict\": \"pass\", \"reason\": \"The agent accurately represented that the case was escalated for review (matching the escalate_to_human tool call), consistently refused to promise a specific refund amount or timeline, and did not claim any action was taken beyond what the tool calls support.\"}\n```",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 205,
+        "prompt_tokens": 918,
+        "total_tokens": 1123,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 205
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 918,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.6-sonnet",
+       "system_fingerprint": null,
+       "id": "chatcmpl-3a29f51b-b6ec-4b86-9d11-5dbac685bbe3",
+       "finish_reason": "stop",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16abe-4f03-7b41-bc6a-49f2323f00c1-0",
+      "usage_metadata": {
+       "input_tokens": 918,
+       "output_tokens": 205,
+       "total_tokens": 1123,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "tool_calls": [],
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

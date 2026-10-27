@@ -1,0 +1,95 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "I can see the issue! Your ride from Daly City to Market St on November 3rd has a **$12.00 airport fee** (charge C201) that shouldn't be there \u2014 that route doesn't involve an airport.\n\nI'll go ahead and refund that $12.00 for you now!",
+    "generation_info": {
+     "finish_reason": "tool_calls",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "I can see the issue! Your ride from Daly City to Market St on November 3rd has a **$12.00 airport fee** (charge C201) that shouldn't be there \u2014 that route doesn't involve an airport.\n\nI'll go ahead and refund that $12.00 for you now!",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 166,
+        "prompt_tokens": 1460,
+        "total_tokens": 1626,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 166
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 1460,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.6-sonnet",
+       "system_fingerprint": null,
+       "id": "chatcmpl-b4783776-37c1-4c7e-b5bc-61289b72b2a9",
+       "finish_reason": "tool_calls",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16abf-ddae-76a1-8479-c64a1442b2a2-0",
+      "tool_calls": [
+       {
+        "name": "issue_refund",
+        "args": {
+         "ride_id": "R200",
+         "charge_id": "C201",
+         "amount": 12.0
+        },
+        "id": "tooluse_z773l4zRBNjJ60H83GuUlF",
+        "type": "tool_call"
+       }
+      ],
+      "usage_metadata": {
+       "input_tokens": 1460,
+       "output_tokens": 166,
+       "total_tokens": 1626,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

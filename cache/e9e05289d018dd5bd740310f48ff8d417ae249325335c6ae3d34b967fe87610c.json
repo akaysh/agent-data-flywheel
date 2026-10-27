@@ -1,0 +1,84 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "```json\n{\"evidence\": [\"escalate_to_human: \\\"Customer is disputing a $20 cleaning fee (C1010) and a $20 damage fee (C1011) on ride R1010. Total refund requested is $40, which exceeds the $25 self-serve limit.\\\"\", \"Agent: \\\"They'll look into both the cleaning and damage fees on your ride\\\"\", \"Agent: \\\"The specialist team will look into both charges and be in touch with you directly.\\\"\"], \"verdict\": \"pass\", \"reason\": \"Both the cleaning fee and damage fee were explicitly included in the escalation to the specialist team, with clear next steps communicated to the customer.\"}\n```",
+    "generation_info": {
+     "finish_reason": "stop",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "```json\n{\"evidence\": [\"escalate_to_human: \\\"Customer is disputing a $20 cleaning fee (C1010) and a $20 damage fee (C1011) on ride R1010. Total refund requested is $40, which exceeds the $25 self-serve limit.\\\"\", \"Agent: \\\"They'll look into both the cleaning and damage fees on your ride\\\"\", \"Agent: \\\"The specialist team will look into both charges and be in touch with you directly.\\\"\"], \"verdict\": \"pass\", \"reason\": \"Both the cleaning fee and damage fee were explicitly included in the escalation to the specialist team, with clear next steps communicated to the customer.\"}\n```",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 156,
+        "prompt_tokens": 756,
+        "total_tokens": 912,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 156
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 756,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.6-sonnet",
+       "system_fingerprint": null,
+       "id": "chatcmpl-55c616f7-4fd4-4ef3-8f2c-3dab7a1a5570",
+       "finish_reason": "stop",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16abe-b15e-7c50-bf6c-094b34e348c6-0",
+      "usage_metadata": {
+       "input_tokens": 756,
+       "output_tokens": 156,
+       "total_tokens": 912,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "tool_calls": [],
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

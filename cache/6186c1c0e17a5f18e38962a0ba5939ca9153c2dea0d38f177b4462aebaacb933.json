@@ -1,0 +1,84 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "I completely understand your frustration \u2014 it's your money and it shouldn't be tied up due to our error. Unfortunately, because the duplicate charge is **$68**, it's above the **$25 limit** I'm authorized to refund directly. I'm not able to make an exception to that, even in clear-cut cases like this.\n\nWhat I **can** tell you:\n- Your case is already **queued for human review** with full details noted (both charges, the duplicate, everything).\n- The billing team handles these as a priority since it's an obvious error on our end.\n\nI'm sorry I can't do more from my end right now. Is there anything else I can help you with in the meantime?",
+    "generation_info": {
+     "finish_reason": "stop",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "I completely understand your frustration \u2014 it's your money and it shouldn't be tied up due to our error. Unfortunately, because the duplicate charge is **$68**, it's above the **$25 limit** I'm authorized to refund directly. I'm not able to make an exception to that, even in clear-cut cases like this.\n\nWhat I **can** tell you:\n- Your case is already **queued for human review** with full details noted (both charges, the duplicate, everything).\n- The billing team handles these as a priority since it's an obvious error on our end.\n\nI'm sorry I can't do more from my end right now. Is there anything else I can help you with in the meantime?",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 159,
+        "prompt_tokens": 1944,
+        "total_tokens": 2103,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 159
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 1944,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.6-sonnet",
+       "system_fingerprint": null,
+       "id": "chatcmpl-b6a3ca9f-d191-49f2-96a1-909cac7b3852",
+       "finish_reason": "stop",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16abf-e681-7dd2-872e-7e24f55736ea-0",
+      "usage_metadata": {
+       "input_tokens": 1944,
+       "output_tokens": 159,
+       "total_tokens": 2103,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "tool_calls": [],
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

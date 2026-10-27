@@ -1,0 +1,109 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "Of course! Let me pull up the charges for all three rides at once so we can compare.",
+    "generation_info": {
+     "finish_reason": "tool_calls",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "Of course! Let me pull up the charges for all three rides at once so we can compare.",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 155,
+        "prompt_tokens": 1521,
+        "total_tokens": 1676,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 155
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 1521,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.6-sonnet",
+       "system_fingerprint": null,
+       "id": "chatcmpl-e5490859-e2b1-4cb8-b600-0096a1d9f0c0",
+       "finish_reason": "tool_calls",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16abf-faeb-7313-ba5c-804221700480-0",
+      "tool_calls": [
+       {
+        "name": "get_charges",
+        "args": {
+         "ride_id": "R600"
+        },
+        "id": "tooluse_aHFrSJo0SwKQ7iqv2430Zj",
+        "type": "tool_call"
+       },
+       {
+        "name": "get_charges",
+        "args": {
+         "ride_id": "R601"
+        },
+        "id": "tooluse_CjgLdvagec5T0MOCmkGBlI",
+        "type": "tool_call"
+       },
+       {
+        "name": "get_charges",
+        "args": {
+         "ride_id": "R602"
+        },
+        "id": "tooluse_VykavkZHXdfQNUWj4dqKRs",
+        "type": "tool_call"
+       }
+      ],
+      "usage_metadata": {
+       "input_tokens": 1521,
+       "output_tokens": 155,
+       "total_tokens": 1676,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

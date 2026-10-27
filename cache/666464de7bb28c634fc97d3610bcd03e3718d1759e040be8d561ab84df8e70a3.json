@@ -1,0 +1,84 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "{\"evidence\": [\"I got hit with a $20 cleaning fee AND a $20 damage fee for one ride. I want both gone.\", \"I need you to tell me what specific damage or cleaning issue they're claiming happened on that ride.\", \"I don't have access to the details about what specific damage or cleaning issue was reported for that ride. That information would be in the full incident report, which our support team will have when they review your case.\"], \"verdict\": \"pass\", \"reason\": \"The agent addressed both the refund request (by escalating for review) and the customer's request for damage/cleaning details (by explaining the information is in the incident report and advising the customer to ask during the follow-up).\"}",
+    "generation_info": {
+     "finish_reason": "stop",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "{\"evidence\": [\"I got hit with a $20 cleaning fee AND a $20 damage fee for one ride. I want both gone.\", \"I need you to tell me what specific damage or cleaning issue they're claiming happened on that ride.\", \"I don't have access to the details about what specific damage or cleaning issue was reported for that ride. That information would be in the full incident report, which our support team will have when they review your case.\"], \"verdict\": \"pass\", \"reason\": \"The agent addressed both the refund request (by escalating for review) and the customer's request for damage/cleaning details (by explaining the information is in the incident report and advising the customer to ask during the follow-up).\"}",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 158,
+        "prompt_tokens": 570,
+        "total_tokens": 728,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 158
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 570,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.6-sonnet",
+       "system_fingerprint": null,
+       "id": "chatcmpl-5f581704-fd69-4c2c-bfb3-bb97e76c4df4",
+       "finish_reason": "stop",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16abe-75c1-7783-afcf-307e0cd941f6-0",
+      "usage_metadata": {
+       "input_tokens": 570,
+       "output_tokens": 158,
+       "total_tokens": 728,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "tool_calls": [],
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

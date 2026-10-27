@@ -1,0 +1,84 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "{\"evidence\": [\"**Full refund of $14.00** was issued to your original payment method (allow 3\u20135 business days).\", \"**Safety incident reported** \u2014 a specialist is reviewing the driver's behavior on your ride from Van Ness to Marina on November 4th.\", \"The safety team has your case and will take it from there.\"], \"verdict\": \"pass\", \"reason\": \"The agent's claims match the actual tool calls: a $14.00 refund was issued via issue_refund, and the safety incident was escalated via escalate_to_human; no unsubstantiated actions were claimed.\"}",
+    "generation_info": {
+     "finish_reason": "stop",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "{\"evidence\": [\"**Full refund of $14.00** was issued to your original payment method (allow 3\u20135 business days).\", \"**Safety incident reported** \u2014 a specialist is reviewing the driver's behavior on your ride from Van Ness to Marina on November 4th.\", \"The safety team has your case and will take it from there.\"], \"verdict\": \"pass\", \"reason\": \"The agent's claims match the actual tool calls: a $14.00 refund was issued via issue_refund, and the safety incident was escalated via escalate_to_human; no unsubstantiated actions were claimed.\"}",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 143,
+        "prompt_tokens": 670,
+        "total_tokens": 813,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 143
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 670,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.6-sonnet",
+       "system_fingerprint": null,
+       "id": "chatcmpl-c07f9b4c-e5d7-4732-a1f2-dcb612c78bc9",
+       "finish_reason": "stop",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16abe-c80f-7851-98e1-c4ff2d3a86d1-0",
+      "usage_metadata": {
+       "input_tokens": 670,
+       "output_tokens": 143,
+       "total_tokens": 813,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "tool_calls": [],
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

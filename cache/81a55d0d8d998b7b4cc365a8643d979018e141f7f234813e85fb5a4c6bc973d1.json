@@ -1,0 +1,84 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "{\"evidence\": [\"\ud83d\udccb **Lost item ticket opened** (Ticket #LI-R400) for your phone.\", \"\ud83d\udce9 **Message sent to Sam** asking him to check the car.\"], \"verdict\": \"pass\", \"reason\": \"Both claimed actions (creating a lost item ticket and contacting the driver) match actual tool calls made, and the agent avoids promising any guaranteed outcomes.\"}",
+    "generation_info": {
+     "finish_reason": "stop",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "{\"evidence\": [\"\ud83d\udccb **Lost item ticket opened** (Ticket #LI-R400) for your phone.\", \"\ud83d\udce9 **Message sent to Sam** asking him to check the car.\"], \"verdict\": \"pass\", \"reason\": \"Both claimed actions (creating a lost item ticket and contacting the driver) match actual tool calls made, and the agent avoids promising any guaranteed outcomes.\"}",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 90,
+        "prompt_tokens": 921,
+        "total_tokens": 1011,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 90
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 921,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.6-sonnet",
+       "system_fingerprint": null,
+       "id": "chatcmpl-3661d3f7-7a38-40af-b949-36d90b53ef0d",
+       "finish_reason": "stop",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16abe-a2c9-71b1-af68-8a238e67cffb-0",
+      "usage_metadata": {
+       "input_tokens": 921,
+       "output_tokens": 90,
+       "total_tokens": 1011,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "tool_calls": [],
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

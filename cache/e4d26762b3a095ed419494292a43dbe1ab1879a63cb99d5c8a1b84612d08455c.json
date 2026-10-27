@@ -1,0 +1,101 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "Good news \u2014 it looks like you only have one recent ride, so I'll go ahead and pull up the details and charges for that one right away!",
+    "generation_info": {
+     "finish_reason": "tool_calls",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "Good news \u2014 it looks like you only have one recent ride, so I'll go ahead and pull up the details and charges for that one right away!",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 129,
+        "prompt_tokens": 1288,
+        "total_tokens": 1417,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 129
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 1288,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.6-sonnet",
+       "system_fingerprint": null,
+       "id": "chatcmpl-c87b6b01-9fb1-4634-96b6-95a5f1f0291f",
+       "finish_reason": "tool_calls",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16abf-be2c-76e0-b558-a81469cd040a-0",
+      "tool_calls": [
+       {
+        "name": "get_ride",
+        "args": {
+         "ride_id": "R1000"
+        },
+        "id": "tooluse_aPeMtC2PGIYSnqHYsIDuHt",
+        "type": "tool_call"
+       },
+       {
+        "name": "get_charges",
+        "args": {
+         "ride_id": "R1000"
+        },
+        "id": "tooluse_c2tIIexDmQ2wOLtxShYUap",
+        "type": "tool_call"
+       }
+      ],
+      "usage_metadata": {
+       "input_tokens": 1288,
+       "output_tokens": 129,
+       "total_tokens": 1417,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

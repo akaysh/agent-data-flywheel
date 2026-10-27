@@ -1,0 +1,7 @@
+{
+  "goal": "Understand why the fare was higher.",
+  "hidden_facts": [
+    "It was raining and demand was high (Prime Time)."
+  ],
+  "behavior": "Calm. Accepts a clear explanation."
+}

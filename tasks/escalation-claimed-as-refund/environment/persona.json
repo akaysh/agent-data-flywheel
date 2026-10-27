@@ -1,0 +1,7 @@
+{
+  "goal": "Get $30 back.",
+  "hidden_facts": [
+    "Detour was about 20 minutes."
+  ],
+  "behavior": "Firm. Asks 'so is my refund done?' at the end."
+}

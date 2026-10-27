@@ -1,0 +1,103 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "The $20 cleaning fee dispute is within the $25 limit, but I don't have an `issue_refund` tool available \u2014 and the cleaning fee dispute plus the lost phone are two separate issues I can handle with my tools. Let me open a lost item ticket and contact the driver, and escalate the cleaning fee dispute since I can't issue refunds directly.\n\nActually, let me handle what I **can** do \u2014 open the lost item ticket and contact the driver \u2014 both at the same time!",
+    "generation_info": {
+     "finish_reason": "tool_calls",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "The $20 cleaning fee dispute is within the $25 limit, but I don't have an `issue_refund` tool available \u2014 and the cleaning fee dispute plus the lost phone are two separate issues I can handle with my tools. Let me open a lost item ticket and contact the driver, and escalate the cleaning fee dispute since I can't issue refunds directly.\n\nActually, let me handle what I **can** do \u2014 open the lost item ticket and contact the driver \u2014 both at the same time!",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 284,
+        "prompt_tokens": 1499,
+        "total_tokens": 1783,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 284
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 1499,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.6-sonnet",
+       "system_fingerprint": null,
+       "id": "chatcmpl-c1cb034d-d0cb-47b8-979d-0fbee149d60f",
+       "finish_reason": "tool_calls",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16abf-b6c6-7050-bcee-c082f00eaf72-0",
+      "tool_calls": [
+       {
+        "name": "create_lost_item_ticket",
+        "args": {
+         "ride_id": "R500",
+         "item": "phone"
+        },
+        "id": "tooluse_E25oS6SjKMyot0wU7QOPLO",
+        "type": "tool_call"
+       },
+       {
+        "name": "contact_driver",
+        "args": {
+         "ride_id": "R500",
+         "message": "Hi Ana, your passenger believes they left their phone in your car during the ride on 2026-11-04 from Sunset to Haight. Could you please check and let us know? Thank you!"
+        },
+        "id": "tooluse_Pip44cLxZGAF8Vjw2UktRF",
+        "type": "tool_call"
+       }
+      ],
+      "usage_metadata": {
+       "input_tokens": 1499,
+       "output_tokens": 284,
+       "total_tokens": 1783,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

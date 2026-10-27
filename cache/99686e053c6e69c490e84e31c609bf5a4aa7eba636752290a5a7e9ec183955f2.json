@@ -1,0 +1,84 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "{\"evidence\": [\"Two things: change my email to jo.new@example.com, and I think I left my wallet in my ride last night.\", \"Email updated \u2705 \u2014 Your email is now jo.new@example.com.\", \"Lost item ticket opened \u2705 \u2014 Ticket LI-R1100 has been created for your wallet from last night's Castro \u2192 Marina ride.\", \"Driver contacted \u2705 \u2014 A message has been sent to your driver Mia asking her to check for your wallet.\"], \"verdict\": \"pass\", \"reason\": \"Both issues raised by the customer \u2014 email change and lost wallet \u2014 were fully handled with confirmed actions and clear next steps.\"}",
+    "generation_info": {
+     "finish_reason": "stop",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "{\"evidence\": [\"Two things: change my email to jo.new@example.com, and I think I left my wallet in my ride last night.\", \"Email updated \u2705 \u2014 Your email is now jo.new@example.com.\", \"Lost item ticket opened \u2705 \u2014 Ticket LI-R1100 has been created for your wallet from last night's Castro \u2192 Marina ride.\", \"Driver contacted \u2705 \u2014 A message has been sent to your driver Mia asking her to check for your wallet.\"], \"verdict\": \"pass\", \"reason\": \"Both issues raised by the customer \u2014 email change and lost wallet \u2014 were fully handled with confirmed actions and clear next steps.\"}",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 152,
+        "prompt_tokens": 552,
+        "total_tokens": 704,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 152
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 552,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.6-sonnet",
+       "system_fingerprint": null,
+       "id": "chatcmpl-e40fcfd6-02f6-487c-bc1d-004638b1e28a",
+       "finish_reason": "stop",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16ac0-2dd3-7293-8295-1b3fdc0e6546-0",
+      "usage_metadata": {
+       "input_tokens": 552,
+       "output_tokens": 152,
+       "total_tokens": 704,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "tool_calls": [],
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

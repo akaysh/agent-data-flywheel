@@ -1,0 +1,16 @@
+{
+  "must_call": [
+    "list_recent_rides",
+    "issue_refund"
+  ],
+  "call_before": [
+    [
+      "list_recent_rides",
+      "issue_refund"
+    ]
+  ],
+  "max_refund_total": 8.0,
+  "refund_ride_ids": [
+    "R601"
+  ]
+}

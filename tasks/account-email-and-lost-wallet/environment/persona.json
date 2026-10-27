@@ -1,0 +1,7 @@
+{
+  "goal": "Get the email changed AND start recovering the wallet.",
+  "hidden_facts": [
+    "Brown leather wallet, left on the back seat."
+  ],
+  "behavior": "Friendly. Will remind the agent of the second request if it is ignored."
+}

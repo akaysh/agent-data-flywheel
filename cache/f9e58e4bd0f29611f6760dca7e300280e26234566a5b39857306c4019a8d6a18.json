@@ -1,0 +1,84 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "{\"evidence\": [\"Customer: You charged me TWICE for the same ride. $68 each. Fix this now.\", \"Agent: All set! \u2713 I've refunded the duplicate $68 charge. You should see it back in your account within 1-2 business days.\"], \"verdict\": \"na\", \"reason\": \"The customer raised only one issue (duplicate charge) and the agent resolved it by issuing a refund.\"}",
+    "generation_info": {
+     "finish_reason": "stop",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "{\"evidence\": [\"Customer: You charged me TWICE for the same ride. $68 each. Fix this now.\", \"Agent: All set! \u2713 I've refunded the duplicate $68 charge. You should see it back in your account within 1-2 business days.\"], \"verdict\": \"na\", \"reason\": \"The customer raised only one issue (duplicate charge) and the agent resolved it by issuing a refund.\"}",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 100,
+        "prompt_tokens": 349,
+        "total_tokens": 449,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 100
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 349,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.6-sonnet",
+       "system_fingerprint": null,
+       "id": "chatcmpl-cb7db4ae-bd75-42ea-84d6-25925d2e6223",
+       "finish_reason": "stop",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16abe-1c10-7f12-bfa6-a82eb6937e31-0",
+      "usage_metadata": {
+       "input_tokens": 349,
+       "output_tokens": 100,
+       "total_tokens": 449,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "tool_calls": [],
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

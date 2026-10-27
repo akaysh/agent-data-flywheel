@@ -1,0 +1,84 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "I can see a few recent rides on your account:\n\n1. **R600** \u2013 Oct 30, SoMa \u2192 Mission, $11.00\n2. **R601** \u2013 Oct 27, SoMa \u2192 Oakland, $39.00\n3. **R602** \u2013 Oct 25, Mission \u2192 SoMa, $10.50\n\nWhich ride were you overcharged on? And do you know roughly how much you think you were overcharged?",
+    "generation_info": {
+     "finish_reason": "stop",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "I can see a few recent rides on your account:\n\n1. **R600** \u2013 Oct 30, SoMa \u2192 Mission, $11.00\n2. **R601** \u2013 Oct 27, SoMa \u2192 Oakland, $39.00\n3. **R602** \u2013 Oct 25, Mission \u2192 SoMa, $10.50\n\nWhich ride were you overcharged on? And do you know roughly how much you think you were overcharged?",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 108,
+        "prompt_tokens": 1380,
+        "total_tokens": 1488,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 108
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 1380,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.6-sonnet",
+       "system_fingerprint": null,
+       "id": "chatcmpl-5f4e9043-47f1-4dac-8c2f-b3cb795c2075",
+       "finish_reason": "stop",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16abf-f25a-7240-a9df-36e8a77d868f-0",
+      "usage_metadata": {
+       "input_tokens": 1380,
+       "output_tokens": 108,
+       "total_tokens": 1488,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "tool_calls": [],
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

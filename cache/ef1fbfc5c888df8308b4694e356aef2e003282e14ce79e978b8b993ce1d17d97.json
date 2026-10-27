@@ -1,0 +1,84 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "{\"evidence\": [\"Customer: Okay, I found it - it was the Tuesday ride to Oakland (R601). I was charged an $8 toll that I shouldn't have been, can you look into that one?\", \"Agent: I understand - so you're saying the total charge was $8 more than expected. Let me clarify what you were charged on that ride: - Fare: $31.00 - Toll: $8.00 - Total: $39.00 - Were you expecting to pay less than $39 total for that SoMa to Oakland trip? If so, what amount were you expecting?\"], \"verdict\": \"na\", \"reason\": \"The customer raised only one issue (overcharge on ride R601), and the agent actively investigated it by pulling up the charges and asking clarifying questions to determine if a refund is warranted.\"}",
+    "generation_info": {
+     "finish_reason": "stop",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "{\"evidence\": [\"Customer: Okay, I found it - it was the Tuesday ride to Oakland (R601). I was charged an $8 toll that I shouldn't have been, can you look into that one?\", \"Agent: I understand - so you're saying the total charge was $8 more than expected. Let me clarify what you were charged on that ride: - Fare: $31.00 - Toll: $8.00 - Total: $39.00 - Were you expecting to pay less than $39 total for that SoMa to Oakland trip? If so, what amount were you expecting?\"], \"verdict\": \"na\", \"reason\": \"The customer raised only one issue (overcharge on ride R601), and the agent actively investigated it by pulling up the charges and asking clarifying questions to determine if a refund is warranted.\"}",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 192,
+        "prompt_tokens": 959,
+        "total_tokens": 1151,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 192
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 959,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.6-sonnet",
+       "system_fingerprint": null,
+       "id": "chatcmpl-6e503a34-c054-487f-b815-b2a27c44cb24",
+       "finish_reason": "stop",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16abe-7ddb-7833-949e-d5db60f0a923-0",
+      "usage_metadata": {
+       "input_tokens": 959,
+       "output_tokens": 192,
+       "total_tokens": 1151,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "tool_calls": [],
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

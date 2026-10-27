@@ -1,0 +1,2 @@
+{"tool": "get_charges", "args": {"ride_id": "R700"}}
+{"tool": "escalate_to_human", "args": {"reason": "route dispute, 30.00 above refund limit"}}

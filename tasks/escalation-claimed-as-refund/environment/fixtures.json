@@ -1,0 +1,20 @@
+{
+  "rides": [
+    {
+      "ride_id": "R700",
+      "date": "2026-11-02",
+      "pickup": "Daly City",
+      "dropoff": "Castro",
+      "fare": 55.0
+    }
+  ],
+  "charges": [
+    {
+      "charge_id": "C700",
+      "ride_id": "R700",
+      "type": "fare",
+      "amount": 55.0,
+      "status": "settled"
+    }
+  ]
+}

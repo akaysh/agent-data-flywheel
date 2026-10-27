@@ -1,0 +1,84 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "I understand you want this resolved quickly. Unfortunately, routing disputes need to go through our human team to review the actual route taken\u2014I can't process that refund directly without that investigation. \n\nThe good news is your case is already queued and prioritized. Our team will review the GPS data from your ride and get back to you as soon as possible today. They have the authority to issue the full refund if the detour is confirmed.\n\nI know it's not instant, but this ensures you get the right resolution. Hang tight!",
+    "generation_info": {
+     "finish_reason": "stop",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "I understand you want this resolved quickly. Unfortunately, routing disputes need to go through our human team to review the actual route taken\u2014I can't process that refund directly without that investigation. \n\nThe good news is your case is already queued and prioritized. Our team will review the GPS data from your ride and get back to you as soon as possible today. They have the authority to issue the full refund if the detour is confirmed.\n\nI know it's not instant, but this ensures you get the right resolution. Hang tight!",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 116,
+        "prompt_tokens": 1450,
+        "total_tokens": 1566,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 116
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 1450,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.5-haiku",
+       "system_fingerprint": null,
+       "id": "chatcmpl-ca6a1111-a5a0-4479-99cd-5a610bcb7eca",
+       "finish_reason": "stop",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16abd-a448-7193-8636-ba3f10bb35ab-0",
+      "usage_metadata": {
+       "input_tokens": 1450,
+       "output_tokens": 116,
+       "total_tokens": 1566,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "tool_calls": [],
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

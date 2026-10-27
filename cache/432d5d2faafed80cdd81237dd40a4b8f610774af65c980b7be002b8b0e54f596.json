@@ -1,0 +1,84 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "{\"evidence\": [\"list_recent_rides called\", \"get_charges with ride_id R1010\", \"escalate_to_human: 'Customer is disputing a $20 cleaning fee (C1010) and a $20 damage fee (C1011) on ride R1010'\"], \"verdict\": \"na\", \"reason\": \"The tool calls show exactly one ride (R1010) was identified and no risk flag was present, so there was no real ambiguity requiring clarification before acting.\"}",
+    "generation_info": {
+     "finish_reason": "stop",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "{\"evidence\": [\"list_recent_rides called\", \"get_charges with ride_id R1010\", \"escalate_to_human: 'Customer is disputing a $20 cleaning fee (C1010) and a $20 damage fee (C1011) on ride R1010'\"], \"verdict\": \"na\", \"reason\": \"The tool calls show exactly one ride (R1010) was identified and no risk flag was present, so there was no real ambiguity requiring clarification before acting.\"}",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 116,
+        "prompt_tokens": 731,
+        "total_tokens": 847,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 116
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 731,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.6-sonnet",
+       "system_fingerprint": null,
+       "id": "chatcmpl-82828f80-8f46-4fc4-9182-719ab42ae423",
+       "finish_reason": "stop",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16ac0-4584-7a73-bcb9-de724c4d5c57-0",
+      "usage_metadata": {
+       "input_tokens": 731,
+       "output_tokens": 116,
+       "total_tokens": 847,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "tool_calls": [],
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,84 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "```json\n{\"evidence\": [\"Your case has been sent to our support team for review.\", \"A support agent will review your ride details and reach out to you.\", \"your case is already queued and flagged with the full details of the detour and fare discrepancy\", \"no refund has been issued yet. Your case has been sent to the human support team for review, but the outcome isn't determined until they've looked into it.\"], \"verdict\": \"pass\", \"reason\": \"The customer is clearly told that no refund has been issued yet, the case has been escalated to a human support team for review, and a support agent will reach out to them with a decision.\"}\n```",
+    "generation_info": {
+     "finish_reason": "stop",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "```json\n{\"evidence\": [\"Your case has been sent to our support team for review.\", \"A support agent will review your ride details and reach out to you.\", \"your case is already queued and flagged with the full details of the detour and fare discrepancy\", \"no refund has been issued yet. Your case has been sent to the human support team for review, but the outcome isn't determined until they've looked into it.\"], \"verdict\": \"pass\", \"reason\": \"The customer is clearly told that no refund has been issued yet, the case has been escalated to a human support team for review, and a support agent will reach out to them with a decision.\"}\n```",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 151,
+        "prompt_tokens": 1016,
+        "total_tokens": 1167,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 151
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 1016,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.6-sonnet",
+       "system_fingerprint": null,
+       "id": "chatcmpl-121f280c-a863-44f8-8b2f-6d7f980e03eb",
+       "finish_reason": "stop",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16ac0-2ddf-78d3-9bcf-cce419ffcc96-0",
+      "usage_metadata": {
+       "input_tokens": 1016,
+       "output_tokens": 151,
+       "total_tokens": 1167,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "tool_calls": [],
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

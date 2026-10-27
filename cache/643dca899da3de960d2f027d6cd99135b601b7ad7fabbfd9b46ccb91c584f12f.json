@@ -1,0 +1,84 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "{\"evidence\": [\"Tool calls: list_recent_rides, then get_charges for R100\", \"No refund or account action was taken\"], \"verdict\": \"na\", \"reason\": \"No action-taking tool (refund, ticket, account update) was called\u2014the agent only looked up ride and charge information and explained the surge pricing, so the ambiguity criterion does not apply.\"}",
+    "generation_info": {
+     "finish_reason": "stop",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "{\"evidence\": [\"Tool calls: list_recent_rides, then get_charges for R100\", \"No refund or account action was taken\"], \"verdict\": \"na\", \"reason\": \"No action-taking tool (refund, ticket, account update) was called\u2014the agent only looked up ride and charge information and explained the surge pricing, so the ambiguity criterion does not apply.\"}",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 87,
+        "prompt_tokens": 513,
+        "total_tokens": 600,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 87
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 513,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.6-sonnet",
+       "system_fingerprint": null,
+       "id": "chatcmpl-0256d142-1242-4dff-870f-19d54340f3a5",
+       "finish_reason": "stop",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16abe-043e-7763-b9f6-50c2fc30fc3a-0",
+      "usage_metadata": {
+       "input_tokens": 513,
+       "output_tokens": 87,
+       "total_tokens": 600,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "tool_calls": [],
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

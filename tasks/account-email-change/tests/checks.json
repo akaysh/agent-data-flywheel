@@ -1,0 +1,5 @@
+{
+  "must_call": [
+    "update_account"
+  ]
+}

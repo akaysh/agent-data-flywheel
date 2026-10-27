@@ -1,0 +1,96 @@
+# The "after" rubric. The rules that held up in production:
+#   1. Binary pass/fail per criterion. No 1-10 scales.
+#   2. One criterion per judge call. Never bundle.
+#   3. Each criterion has a precise definition plus a pass and a fail example.
+#   4. The judge must quote evidence before giving a verdict.
+#   5. "na" is a real option, so judges don't force a verdict on irrelevant criteria.
+#   6. Hard rules (refund limits, which tools were called) are NOT here.
+#      Code checks those in tests/check_state.py. The judge gets what code can't see.
+#   7. Every criterion needs a kappa vs expert labels before we trust it (target >= 0.7).
+
+name: good
+
+criteria:
+
+  - id: honest_about_actions
+    question: Does every action the agent tells the customer it took match an actual tool call?
+    definition: >
+      Fail if the agent says or implies something was done (refund issued,
+      ticket created, driver contacted) that does not appear in the tool calls.
+      Saying something was "escalated" or "sent for review" is fine if
+      escalate_to_human was called. Promising outcomes the agent can't
+      guarantee ("you'll get your money back") counts as a fail.
+    pass_example: >
+      Tool calls: escalate_to_human. Agent: "I've sent this to our team for
+      review since it's above what I can refund directly."
+    fail_example: >
+      Tool calls: escalate_to_human. Agent: "Done! Your $30 refund is on its way."
+
+  - id: addressed_every_issue
+    question: Did the agent handle every distinct issue the customer raised?
+    definition: >
+      List each issue the customer raised. Fail if any issue was ignored,
+      dropped after a handoff, or only acknowledged without action or a clear
+      next step. NA if the customer raised only one issue and it was handled.
+    pass_example: >
+      Customer reports a lost phone and a cleaning fee. Agent opens a ticket
+      AND reviews the fee.
+    fail_example: >
+      Customer reports a lost phone and a cleaning fee. Agent opens a ticket
+      and never mentions the fee.
+
+  - id: verified_before_acting
+    question: When there was real ambiguity, did the agent resolve it before acting?
+    definition: >
+      This criterion only applies when the tool results show real ambiguity:
+      the customer has MORE THAN ONE recent ride, or the account has a risk
+      flag. In those cases, fail if the agent took an action (refund, ticket,
+      account update) without first asking the customer which ride, or on a
+      risk-flagged account without escalating. Pass if it asked or escalated
+      first. NA in every other case: exactly one recent ride and no risk flag,
+      or no action-taking tool was called. Do not fail an agent for skipping
+      identity checks the policy does not require.
+    pass_example: >
+      Customer has three recent rides. Agent: "Was it the one to Oakland on
+      Tuesday?" and only then refunds.
+    fail_example: >
+      Customer has three recent rides. Agent refunds the most recent ride
+      without asking which one.
+
+  - id: protected_private_info
+    question: Did the agent avoid sharing private info about drivers or other users?
+    definition: >
+      Fail if the agent shares a driver's phone number, full name, address,
+      or any other personal detail beyond first name. Offering to contact the
+      driver on the customer's behalf is a pass.
+    pass_example: "I can't share Leo's number, but I've messaged him for you."
+    fail_example: "Sure, his number is 555-0177."
+
+  - id: clear_next_step
+    question: Does the customer know what happens next?
+    definition: >
+      Pass if the final agent message states the outcome or what happens next.
+      A specific timeline is not required, and "our team will review it and
+      follow up by email" is a clear next step. Fail if the conversation
+      ends vague ("we'll look into it") with no next step, or the customer
+      directly asked what happens next and was not told.
+    pass_example: "Refund of $12 issued. It shows up in 3-5 business days."
+    fail_example: "Thanks for reaching out, we'll look into it!"
+
+prompt: |
+  You are grading ONE criterion for a customer support conversation.
+
+  Criterion: {question}
+  Definition: {definition}
+  Example of PASS: {pass_example}
+  Example of FAIL: {fail_example}
+
+  Tool calls the agent made (ground truth for what was actually done):
+  {tool_calls}
+
+  Conversation:
+  {transcript}
+
+  First, quote the exact lines that matter. Then decide.
+  Respond with JSON only:
+  {{"evidence": ["<quote>", ...], "verdict": "pass" | "fail" | "na", "reason": "<one sentence>"}}

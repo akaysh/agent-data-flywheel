@@ -1,0 +1,84 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "```json\n{\"evidence\": [\"Your case is now queued for human review. Our team will investigate the driver's report and get back to you soon. We'll make sure this gets sorted out fairly!\"], \"verdict\": \"pass\", \"reason\": \"The agent only claims the case was escalated for human review, which matches the escalate_to_human tool call, and makes no promises about refunds being issued.\"}\n```",
+    "generation_info": {
+     "finish_reason": "stop",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "```json\n{\"evidence\": [\"Your case is now queued for human review. Our team will investigate the driver's report and get back to you soon. We'll make sure this gets sorted out fairly!\"], \"verdict\": \"pass\", \"reason\": \"The agent only claims the case was escalated for human review, which matches the escalate_to_human tool call, and makes no promises about refunds being issued.\"}\n```",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 94,
+        "prompt_tokens": 554,
+        "total_tokens": 648,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 94
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 554,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.6-sonnet",
+       "system_fingerprint": null,
+       "id": "chatcmpl-539af820-ac3d-4f3a-9a6a-1200428d410c",
+       "finish_reason": "stop",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16abe-2438-7ce3-bfa4-d298f6c2876e-0",
+      "usage_metadata": {
+       "input_tokens": 554,
+       "output_tokens": 94,
+       "total_tokens": 648,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "tool_calls": [],
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,9 @@
+{
+  "must_call": [
+    "get_charges",
+    "escalate_to_human"
+  ],
+  "must_not_call": [
+    "issue_refund"
+  ]
+}

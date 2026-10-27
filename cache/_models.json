@@ -1,0 +1,6 @@
+{
+ "agent": "aigateway.claude-4.5-haiku",
+ "simulator": "aigateway.claude-4.5-haiku",
+ "judge": "aigateway.claude-4.6-sonnet",
+ "fixed_agent": "aigateway.claude-4.6-sonnet"
+}

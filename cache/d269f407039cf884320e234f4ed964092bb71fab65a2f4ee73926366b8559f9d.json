@@ -1,0 +1,84 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "I'd be happy to help you get in touch with your driver about your bag! To pull up the driver's contact info, I need to know which ride you're referring to.\n\nCan you give me either:\n- The ride ID, or\n- Roughly when the ride was (today, yesterday, etc.)?\n\nI'll get you the driver's details right away.",
+    "generation_info": {
+     "finish_reason": "stop",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "I'd be happy to help you get in touch with your driver about your bag! To pull up the driver's contact info, I need to know which ride you're referring to.\n\nCan you give me either:\n- The ride ID, or\n- Roughly when the ride was (today, yesterday, etc.)?\n\nI'll get you the driver's details right away.",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 82,
+        "prompt_tokens": 1005,
+        "total_tokens": 1087,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 82
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 1005,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.5-haiku",
+       "system_fingerprint": null,
+       "id": "chatcmpl-2c99c9f7-c388-4877-91e1-072a4f476af6",
+       "finish_reason": "stop",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16abd-8e62-71f3-a8eb-30027fc234ea-0",
+      "usage_metadata": {
+       "input_tokens": 1005,
+       "output_tokens": 82,
+       "total_tokens": 1087,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "tool_calls": [],
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

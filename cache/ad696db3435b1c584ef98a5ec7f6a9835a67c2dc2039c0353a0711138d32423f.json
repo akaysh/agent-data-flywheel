@@ -1,0 +1,84 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "```json\n{\"evidence\": [\"First, do you have a specific ride in mind, or should I pull up your recent rides to find the right one?\", \"Done! I've sent a message to Leo about your backpack.\", \"contact_driver: {\\\"ride_id\\\": \\\"R900\\\", ...}\", \"create_lost_item_ticket: {\\\"ride_id\\\": \\\"R900\\\", ...}\"], \"verdict\": \"pass\", \"reason\": \"The agent explicitly asked the customer to clarify which ride before acting, and the customer confirmed it was a ride earlier today, after which the agent proceeded with ride R900.\"}\n```",
+    "generation_info": {
+     "finish_reason": "stop",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "```json\n{\"evidence\": [\"First, do you have a specific ride in mind, or should I pull up your recent rides to find the right one?\", \"Done! I've sent a message to Leo about your backpack.\", \"contact_driver: {\\\"ride_id\\\": \\\"R900\\\", ...}\", \"create_lost_item_ticket: {\\\"ride_id\\\": \\\"R900\\\", ...}\"], \"verdict\": \"pass\", \"reason\": \"The agent explicitly asked the customer to clarify which ride before acting, and the customer confirmed it was a ride earlier today, after which the agent proceeded with ride R900.\"}\n```",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 142,
+        "prompt_tokens": 766,
+        "total_tokens": 908,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 142
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 766,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.6-sonnet",
+       "system_fingerprint": null,
+       "id": "chatcmpl-385b2c6d-8fee-4427-b8f4-061d581bd0d0",
+       "finish_reason": "stop",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16abe-4d1b-7d43-9ee1-43b519dc6438-0",
+      "usage_metadata": {
+       "input_tokens": 766,
+       "output_tokens": 142,
+       "total_tokens": 908,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "tool_calls": [],
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

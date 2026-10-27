@@ -1,0 +1,13 @@
+{
+  "rides": [
+    {
+      "ride_id": "R900",
+      "date": "2026-11-04",
+      "pickup": "Richmond",
+      "dropoff": "Presidio",
+      "fare": 12.0,
+      "driver_first_name": "Leo",
+      "driver_phone": "+1-555-0177"
+    }
+  ]
+}

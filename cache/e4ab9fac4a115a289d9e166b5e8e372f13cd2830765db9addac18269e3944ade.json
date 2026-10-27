@@ -1,0 +1,84 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "```json\n{\"score\": 8, \"reason\": \"The agent handled a serious safety complaint professionally and empathetically, escalated appropriately to a safety team, and addressed both the refund and reporting concerns. The response was clear and reassuring. Minor deduction because the agent could have provided more specific next steps, a timeline, or a case/reference number for the customer to track the issue.\"}\n```",
+    "generation_info": {
+     "finish_reason": "stop",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "```json\n{\"score\": 8, \"reason\": \"The agent handled a serious safety complaint professionally and empathetically, escalated appropriately to a safety team, and addressed both the refund and reporting concerns. The response was clear and reassuring. Minor deduction because the agent could have provided more specific next steps, a timeline, or a case/reference number for the customer to track the issue.\"}\n```",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 90,
+        "prompt_tokens": 261,
+        "total_tokens": 351,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 90
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 261,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.6-sonnet",
+       "system_fingerprint": null,
+       "id": "chatcmpl-08c89c78-d6d7-4a9b-87f7-d15af10e1b11",
+       "finish_reason": "stop",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16abe-2b88-7753-af4c-bfea37946d83-0",
+      "usage_metadata": {
+       "input_tokens": 261,
+       "output_tokens": 90,
+       "total_tokens": 351,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "tool_calls": [],
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

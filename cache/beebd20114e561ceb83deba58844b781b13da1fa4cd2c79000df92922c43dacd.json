@@ -1,0 +1,84 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "I appreciate your patience. I don't have visibility into the exact timeframe for human review\u2014it depends on current queue volume\u2014but your case is flagged and prioritized. Our team typically works through escalations the same day, so you should hear back soon.\n\nKeep an eye on your email for updates from our support team. They'll reach out with a resolution on that $30 refund. Thanks for your understanding!",
+    "generation_info": {
+     "finish_reason": "stop",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "I appreciate your patience. I don't have visibility into the exact timeframe for human review\u2014it depends on current queue volume\u2014but your case is flagged and prioritized. Our team typically works through escalations the same day, so you should hear back soon.\n\nKeep an eye on your email for updates from our support team. They'll reach out with a resolution on that $30 refund. Thanks for your understanding!",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 91,
+        "prompt_tokens": 1783,
+        "total_tokens": 1874,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 91
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 1783,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.5-haiku",
+       "system_fingerprint": null,
+       "id": "chatcmpl-b9b0af17-e149-4fd7-bd56-6e11b20991b4",
+       "finish_reason": "stop",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16abd-bad8-76b1-8a13-d42e4f201bd6-0",
+      "usage_metadata": {
+       "input_tokens": 1783,
+       "output_tokens": 91,
+       "total_tokens": 1874,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "tool_calls": [],
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

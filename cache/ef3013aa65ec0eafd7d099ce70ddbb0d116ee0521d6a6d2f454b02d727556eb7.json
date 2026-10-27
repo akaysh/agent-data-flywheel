@@ -1,0 +1,84 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "You're welcome! Yeah, rainy days are classic PrimeTime territory \u2014 everyone wants a ride at once! \ud83d\ude04 \n\nIf you ever have questions about a charge or anything else, don't hesitate to reach out. Have a great day! \ud83c\udf24\ufe0f",
+    "generation_info": {
+     "finish_reason": "stop",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "You're welcome! Yeah, rainy days are classic PrimeTime territory \u2014 everyone wants a ride at once! \ud83d\ude04 \n\nIf you ever have questions about a charge or anything else, don't hesitate to reach out. Have a great day! \ud83c\udf24\ufe0f",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 62,
+        "prompt_tokens": 1612,
+        "total_tokens": 1674,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 62
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 1612,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.6-sonnet",
+       "system_fingerprint": null,
+       "id": "chatcmpl-f0d942b3-64de-46c6-9b5e-fd3ac6048730",
+       "finish_reason": "stop",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16abf-af91-7da1-a3b6-a8cc7a9511b8-0",
+      "usage_metadata": {
+       "input_tokens": 1612,
+       "output_tokens": 62,
+       "total_tokens": 1674,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "tool_calls": [],
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

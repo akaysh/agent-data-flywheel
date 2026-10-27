@@ -1,0 +1,103 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "Let me open a lost item ticket and reach out to Sam at the same time!",
+    "generation_info": {
+     "finish_reason": "tool_calls",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "Let me open a lost item ticket and reach out to Sam at the same time!",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 204,
+        "prompt_tokens": 1358,
+        "total_tokens": 1562,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 204
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 1358,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.6-sonnet",
+       "system_fingerprint": null,
+       "id": "chatcmpl-a6b8b862-9ab7-4b36-8550-70f1b2b3ae6f",
+       "finish_reason": "tool_calls",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16abf-a51e-7f33-adc8-1eb472806261-0",
+      "tool_calls": [
+       {
+        "name": "create_lost_item_ticket",
+        "args": {
+         "ride_id": "R400",
+         "item": "phone"
+        },
+        "id": "tooluse_o1Lpkho1XeWOFck9v8jK9w",
+        "type": "tool_call"
+       },
+       {
+        "name": "contact_driver",
+        "args": {
+         "ride_id": "R400",
+         "message": "Hi Sam, your passenger believes they may have left their phone in your vehicle during the ride from Noe Valley to FiDi on 2026-11-04. Could you please check your car and let us know if you found it? Thank you!"
+        },
+        "id": "tooluse_oUrvdS1LMzfgwxEQquofoe",
+        "type": "tool_call"
+       }
+      ],
+      "usage_metadata": {
+       "input_tokens": 1358,
+       "output_tokens": 204,
+       "total_tokens": 1562,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

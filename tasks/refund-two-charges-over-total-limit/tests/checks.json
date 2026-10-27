@@ -1,0 +1,7 @@
+{
+  "must_call": [
+    "get_charges",
+    "escalate_to_human"
+  ],
+  "max_refund_total": 25.0
+}

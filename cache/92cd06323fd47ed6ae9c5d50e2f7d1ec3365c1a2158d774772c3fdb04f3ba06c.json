@@ -1,0 +1,84 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "Everything has already been taken care of in this conversation:\n\n1. **Your $14.00 fare was refunded** \u2014 it should appear on your payment method within a few business days.\n2. **The safety incident was escalated** to our specialist team for review \u2014 they'll look into the driver's behavior and take appropriate action.\n\nThere's nothing further needed from you. If you have any other questions, feel free to reach out! \ud83d\ude0a",
+    "generation_info": {
+     "finish_reason": "stop",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "Everything has already been taken care of in this conversation:\n\n1. **Your $14.00 fare was refunded** \u2014 it should appear on your payment method within a few business days.\n2. **The safety incident was escalated** to our specialist team for review \u2014 they'll look into the driver's behavior and take appropriate action.\n\nThere's nothing further needed from you. If you have any other questions, feel free to reach out! \ud83d\ude0a",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 99,
+        "prompt_tokens": 1924,
+        "total_tokens": 2023,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 99
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 1924,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.6-sonnet",
+       "system_fingerprint": null,
+       "id": "chatcmpl-5d4a2598-a25c-474b-9f9d-c249f097559f",
+       "finish_reason": "stop",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16ac0-25d0-77a2-878c-310d1977c9b5-0",
+      "usage_metadata": {
+       "input_tokens": 1924,
+       "output_tokens": 99,
+       "total_tokens": 2023,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "tool_calls": [],
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

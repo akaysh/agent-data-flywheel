@@ -1,0 +1,84 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "{\"evidence\": [\"They'll investigate the driver's behavior, review the ride details, and handle your refund along with any necessary driver actions.\"], \"verdict\": \"fail\", \"reason\": \"The agent implies a refund will be handled ('handle your refund') as a guaranteed outcome, but the only tool call was escalate_to_human, which cannot guarantee a refund will be issued.\"}",
+    "generation_info": {
+     "finish_reason": "stop",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "{\"evidence\": [\"They'll investigate the driver's behavior, review the ride details, and handle your refund along with any necessary driver actions.\"], \"verdict\": \"fail\", \"reason\": \"The agent implies a refund will be handled ('handle your refund') as a guaranteed outcome, but the only tool call was escalate_to_human, which cannot guarantee a refund will be issued.\"}",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 87,
+        "prompt_tokens": 493,
+        "total_tokens": 580,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 87
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 493,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.6-sonnet",
+       "system_fingerprint": null,
+       "id": "chatcmpl-cd081ba9-6840-4fe5-9344-214f09341a01",
+       "finish_reason": "stop",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16abe-32b8-76d0-bb08-1783001af0bd-0",
+      "usage_metadata": {
+       "input_tokens": 493,
+       "output_tokens": 87,
+       "total_tokens": 580,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "tool_calls": [],
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

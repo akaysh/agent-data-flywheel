@@ -1,0 +1,84 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "```json\n{\"agents\": [\"charges\", \"lost_item\"]}\n```\n\nWait, let me reconsider. The customer wants a refund (charges) and wants to report unsafe driving behavior. Reporting a driver isn't about lost items \u2014 however, among the available agents, \"lost_item\" handles contacting drivers, which is the closest option for driver-related reports.\n\n```json\n{\"agents\": [\"lost_item\", \"charges\"]}\n```",
+    "generation_info": {
+     "finish_reason": "stop",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "```json\n{\"agents\": [\"charges\", \"lost_item\"]}\n```\n\nWait, let me reconsider. The customer wants a refund (charges) and wants to report unsafe driving behavior. Reporting a driver isn't about lost items \u2014 however, among the available agents, \"lost_item\" handles contacting drivers, which is the closest option for driver-related reports.\n\n```json\n{\"agents\": [\"lost_item\", \"charges\"]}\n```",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 102,
+        "prompt_tokens": 119,
+        "total_tokens": 221,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 102
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 119,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.6-sonnet",
+       "system_fingerprint": null,
+       "id": "chatcmpl-791e1e3f-9e52-411e-a949-c4259e8d403d",
+       "finish_reason": "stop",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16ac0-02be-79b0-b5f3-7a78d493ec19-0",
+      "usage_metadata": {
+       "input_tokens": 119,
+       "output_tokens": 102,
+       "total_tokens": 221,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "tool_calls": [],
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

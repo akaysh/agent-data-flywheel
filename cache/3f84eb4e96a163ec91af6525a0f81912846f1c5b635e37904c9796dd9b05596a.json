@@ -1,0 +1,84 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "Here's a full summary of everything done for you today:\n\n1. **$20 cleaning fee** \u2705 \u2014 Refunded! The $20 should appear back on your original payment method within a few business days.\n2. **Lost phone** \ud83d\udcf1 \u2014 A lost item ticket (LI-R500) is open and your driver Ana has been messaged to check the car.\n\n**What's next:** Watch for the refund on your statement, and keep an eye on your email for any update from Ana about your phone. Hope it turns up! \ud83e\udd1e",
+    "generation_info": {
+     "finish_reason": "stop",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "Here's a full summary of everything done for you today:\n\n1. **$20 cleaning fee** \u2705 \u2014 Refunded! The $20 should appear back on your original payment method within a few business days.\n2. **Lost phone** \ud83d\udcf1 \u2014 A lost item ticket (LI-R500) is open and your driver Ana has been messaged to check the car.\n\n**What's next:** Watch for the refund on your statement, and keep an eye on your email for any update from Ana about your phone. Hope it turns up! \ud83e\udd1e",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 130,
+        "prompt_tokens": 2577,
+        "total_tokens": 2707,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 130
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 2577,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.6-sonnet",
+       "system_fingerprint": null,
+       "id": "chatcmpl-8fd9f635-251e-40f0-82fc-93730fae3d65",
+       "finish_reason": "stop",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16abf-ddc6-7c82-aa6c-f8760b4c1116-0",
+      "usage_metadata": {
+       "input_tokens": 2577,
+       "output_tokens": 130,
+       "total_tokens": 2707,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "tool_calls": [],
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

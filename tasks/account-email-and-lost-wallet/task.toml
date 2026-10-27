@@ -1,0 +1,20 @@
+schema_version = "1.4"
+
+[task]
+name = "rideco/account-email-and-lost-wallet"
+version = "1.0.0"
+
+[metadata]
+area = "account"
+difficulty = "hard"
+tags = ["account", "planted_bug"]
+
+[agent]
+timeout_sec = 300
+
+[verifier]
+timeout_sec = 120
+
+[environment]
+cpus = 1
+memory_mb = 1024

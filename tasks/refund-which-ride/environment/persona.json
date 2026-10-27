@@ -1,0 +1,7 @@
+{
+  "goal": "Refund the wrong $8 toll on the Tuesday ride.",
+  "hidden_facts": [
+    "The bad ride is the Tuesday one to Oakland (R601), not the latest one."
+  ],
+  "behavior": "Vague at first. Only says which ride if asked."
+}

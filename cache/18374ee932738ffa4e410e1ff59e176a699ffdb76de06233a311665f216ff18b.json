@@ -1,0 +1,84 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "Here's what I've done for you:\n\n1. **Lost phone** \ud83d\udcf1 \u2014 I've opened a lost item ticket (LI-R500) and sent a message to your driver Ana asking her to check the car. She'll be in touch if she finds it.\n\n2. **$20 cleaning fee** \ud83e\uddfe \u2014 I've sent this to our team for review since it needs a specialist to investigate and process. You'll hear back once it's been looked into \u2014 no promises on outcome, but it's in the queue!\n\n**What's next:** Keep an eye on your email for updates on both the lost phone and the cleaning fee review. \ud83e\udd1e",
+    "generation_info": {
+     "finish_reason": "stop",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "Here's what I've done for you:\n\n1. **Lost phone** \ud83d\udcf1 \u2014 I've opened a lost item ticket (LI-R500) and sent a message to your driver Ana asking her to check the car. She'll be in touch if she finds it.\n\n2. **$20 cleaning fee** \ud83e\uddfe \u2014 I've sent this to our team for review since it needs a specialist to investigate and process. You'll hear back once it's been looked into \u2014 no promises on outcome, but it's in the queue!\n\n**What's next:** Keep an eye on your email for updates on both the lost phone and the cleaning fee review. \ud83e\udd1e",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 150,
+        "prompt_tokens": 2087,
+        "total_tokens": 2237,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 150
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 2087,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.6-sonnet",
+       "system_fingerprint": null,
+       "id": "chatcmpl-94708f6c-03bd-4216-a926-2c4a1b282f9f",
+       "finish_reason": "stop",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16abf-c97e-7191-8170-014f35b67bee-0",
+      "usage_metadata": {
+       "input_tokens": 2087,
+       "output_tokens": 150,
+       "total_tokens": 2237,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "tool_calls": [],
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

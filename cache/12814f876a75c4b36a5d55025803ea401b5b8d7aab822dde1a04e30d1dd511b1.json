@@ -1,0 +1,84 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "```json\n{\"evidence\": [\"My driver took a huge detour, the ride was $55 instead of $25. I want the difference back.\", \"I see the $55 fare charge. A $30 difference is above what I can refund directly ($25 max per contact). Since this involves a potential routing issue, I'm sending this for review by our team who can investigate the route taken and determine the appropriate adjustment.\", \"escalate_to_human: Customer reports driver took a significant detour on ride R700 (Daly City to Castro). Fare was $55 but customer states it should have been ~$25. Requesting $30 refund for overcharge due to routing issue.\"], \"verdict\": \"na\", \"reason\": \"The customer raised only one issue (overcharge due to detour) and the agent handled it by escalating to a specialist with full context.\"}\n```",
+    "generation_info": {
+     "finish_reason": "stop",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "```json\n{\"evidence\": [\"My driver took a huge detour, the ride was $55 instead of $25. I want the difference back.\", \"I see the $55 fare charge. A $30 difference is above what I can refund directly ($25 max per contact). Since this involves a potential routing issue, I'm sending this for review by our team who can investigate the route taken and determine the appropriate adjustment.\", \"escalate_to_human: Customer reports driver took a significant detour on ride R700 (Daly City to Castro). Fare was $55 but customer states it should have been ~$25. Requesting $30 refund for overcharge due to routing issue.\"], \"verdict\": \"na\", \"reason\": \"The customer raised only one issue (overcharge due to detour) and the agent handled it by escalating to a specialist with full context.\"}\n```",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 198,
+        "prompt_tokens": 860,
+        "total_tokens": 1058,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 198
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 860,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.6-sonnet",
+       "system_fingerprint": null,
+       "id": "chatcmpl-67e89f8f-b9da-4f95-823e-e9ad80551e6c",
+       "finish_reason": "stop",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16abe-4f03-7b41-bc6a-4a0b48ccff74-0",
+      "usage_metadata": {
+       "input_tokens": 860,
+       "output_tokens": 198,
+       "total_tokens": 1058,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "tool_calls": [],
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

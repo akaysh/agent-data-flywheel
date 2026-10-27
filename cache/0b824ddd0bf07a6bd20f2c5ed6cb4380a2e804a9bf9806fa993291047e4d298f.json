@@ -1,0 +1,84 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "Got it - that's the Oct 27 ride to Oakland (R601). I already pulled up those charges, and I can see the $8 toll there.\n\nBefore I process a refund, I want to make sure this is the right call. The route from SoMa to Oakland typically does cross the Bay Bridge, which has tolls. Can you help me understand why you believe this toll shouldn't have been charged? For example:\n\n- Did the driver take a different route that wouldn't have had tolls?\n- Was there an error with how the toll was calculated?\n- Something else?\n\nThis will help me determine if a refund is appropriate!",
+    "generation_info": {
+     "finish_reason": "stop",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "Got it - that's the Oct 27 ride to Oakland (R601). I already pulled up those charges, and I can see the $8 toll there.\n\nBefore I process a refund, I want to make sure this is the right call. The route from SoMa to Oakland typically does cross the Bay Bridge, which has tolls. Can you help me understand why you believe this toll shouldn't have been charged? For example:\n\n- Did the driver take a different route that wouldn't have had tolls?\n- Was there an error with how the toll was calculated?\n- Something else?\n\nThis will help me determine if a refund is appropriate!",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 145,
+        "prompt_tokens": 1936,
+        "total_tokens": 2081,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 145
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 1936,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.5-haiku",
+       "system_fingerprint": null,
+       "id": "chatcmpl-d9466fdc-87dd-4548-948a-4e73abe9a4dc",
+       "finish_reason": "stop",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16abf-513e-75d0-b9e2-fc1b6d44d611-0",
+      "usage_metadata": {
+       "input_tokens": 1936,
+       "output_tokens": 145,
+       "total_tokens": 2081,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "tool_calls": [],
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

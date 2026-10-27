@@ -1,0 +1,84 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "{\"evidence\": [\"My driver was speeding and ran a red light with me in the car. I want my money back and I want this reported.\", \"Full refund of $14.00 was issued to your original payment method (allow 3\u20135 business days).\", \"Safety incident reported \u2014 a specialist is reviewing the driver's behavior on your ride from Van Ness to Marina on November 4th.\", \"escalate_to_human: Customer reported a serious safety incident on ride R1200 (2026-11-04, Van Ness to Marina): driver was speeding and ran a red light with the customer in the vehicle. Requires safety review and driver investigation.\", \"issue_refund: ride_id R1200, amount 14.0\"], \"verdict\": \"pass\", \"reason\": \"Both issues the customer raised \u2014 a refund and a safety report \u2014 were fully addressed with concrete actions (refund issued and escalation to safety team).\"}",
+    "generation_info": {
+     "finish_reason": "stop",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "{\"evidence\": [\"My driver was speeding and ran a red light with me in the car. I want my money back and I want this reported.\", \"Full refund of $14.00 was issued to your original payment method (allow 3\u20135 business days).\", \"Safety incident reported \u2014 a specialist is reviewing the driver's behavior on your ride from Van Ness to Marina on November 4th.\", \"escalate_to_human: Customer reported a serious safety incident on ride R1200 (2026-11-04, Van Ness to Marina): driver was speeding and ran a red light with the customer in the vehicle. Requires safety review and driver investigation.\", \"issue_refund: ride_id R1200, amount 14.0\"], \"verdict\": \"pass\", \"reason\": \"Both issues the customer raised \u2014 a refund and a safety report \u2014 were fully addressed with concrete actions (refund issued and escalation to safety team).\"}",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 211,
+        "prompt_tokens": 612,
+        "total_tokens": 823,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 211
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 612,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.6-sonnet",
+       "system_fingerprint": null,
+       "id": "chatcmpl-31e970b4-bdd5-410b-b8ea-b3f14f3c389b",
+       "finish_reason": "stop",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16abe-c80f-7851-98e1-c500c60884b5-0",
+      "usage_metadata": {
+       "input_tokens": 612,
+       "output_tokens": 211,
+       "total_tokens": 823,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "tool_calls": [],
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

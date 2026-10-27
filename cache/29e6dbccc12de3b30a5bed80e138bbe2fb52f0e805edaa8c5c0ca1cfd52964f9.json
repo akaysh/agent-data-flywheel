@@ -1,0 +1,84 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "{\"evidence\": [\"Your lost wallet from last night's ride with Mia has been reported, and our team will reach out if it's found.\", \"They'll reach out directly if there's any news about your wallet.\"], \"verdict\": \"fail\", \"reason\": \"The agent claims the lost wallet was reported and that a team will follow up, but no tool call was made to report a lost item or contact anyone \u2014 only list_recent_rides and update_account were called.\"}",
+    "generation_info": {
+     "finish_reason": "stop",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "{\"evidence\": [\"Your lost wallet from last night's ride with Mia has been reported, and our team will reach out if it's found.\", \"They'll reach out directly if there's any news about your wallet.\"], \"verdict\": \"fail\", \"reason\": \"The agent claims the lost wallet was reported and that a team will follow up, but no tool call was made to report a lost item or contact anyone \u2014 only list_recent_rides and update_account were called.\"}",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 105,
+        "prompt_tokens": 485,
+        "total_tokens": 590,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 105
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 485,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.6-sonnet",
+       "system_fingerprint": null,
+       "id": "chatcmpl-41efd011-aec1-45b7-9048-14cc57a445e2",
+       "finish_reason": "stop",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16abe-3d51-7d40-a7f5-b69ffd071fb5-0",
+      "usage_metadata": {
+       "input_tokens": 485,
+       "output_tokens": 105,
+       "total_tokens": 590,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "tool_calls": [],
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

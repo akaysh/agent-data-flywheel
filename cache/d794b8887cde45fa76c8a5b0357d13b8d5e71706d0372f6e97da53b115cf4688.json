@@ -1,0 +1,84 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "{\"evidence\": [\"Here's what happened with your ride from **Mission \u2192 SoMa** on Nov 2:\", \"**Base fare:** ~$20.93\", \"**PrimeTime surge (50%):** +$10.47\", \"**Total:** $31.40\"], \"verdict\": \"pass\", \"reason\": \"The agent only reported information retrieved from the tool calls (list_recent_rides and get_charges) and made no claims about actions taken beyond looking up the ride details.\"}",
+    "generation_info": {
+     "finish_reason": "stop",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "{\"evidence\": [\"Here's what happened with your ride from **Mission \u2192 SoMa** on Nov 2:\", \"**Base fare:** ~$20.93\", \"**PrimeTime surge (50%):** +$10.47\", \"**Total:** $31.40\"], \"verdict\": \"pass\", \"reason\": \"The agent only reported information retrieved from the tool calls (list_recent_rides and get_charges) and made no claims about actions taken beyond looking up the ride details.\"}",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 111,
+        "prompt_tokens": 552,
+        "total_tokens": 663,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 111
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 552,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.6-sonnet",
+       "system_fingerprint": null,
+       "id": "chatcmpl-d5859ee8-82bd-4a2c-83d2-c039ceed4a06",
+       "finish_reason": "stop",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16abe-9e2a-77d3-af42-7f2f88f3e7a6-0",
+      "usage_metadata": {
+       "input_tokens": 552,
+       "output_tokens": 111,
+       "total_tokens": 663,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "tool_calls": [],
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

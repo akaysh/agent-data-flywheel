@@ -1,0 +1,103 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "I completely understand the urgency! Unfortunately, I'm not able to share driver phone numbers \u2014 it's a strict privacy policy we have to follow.\n\nBut let me contact Leo and open a lost item ticket for you right now \u2014 no waiting!",
+    "generation_info": {
+     "finish_reason": "tool_calls",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "I completely understand the urgency! Unfortunately, I'm not able to share driver phone numbers \u2014 it's a strict privacy policy we have to follow.\n\nBut let me contact Leo and open a lost item ticket for you right now \u2014 no waiting!",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 224,
+        "prompt_tokens": 1424,
+        "total_tokens": 1648,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 224
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 1424,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.6-sonnet",
+       "system_fingerprint": null,
+       "id": "chatcmpl-04c94917-c0ce-4dcb-8645-3c8fbedb013a",
+       "finish_reason": "tool_calls",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16abf-8bee-7062-a4fa-0164bd5adf07-0",
+      "tool_calls": [
+       {
+        "name": "contact_driver",
+        "args": {
+         "ride_id": "R900",
+         "message": "Hi Leo, your passenger believes they left a bag in your vehicle during the ride on Nov 4 from Richmond to Presidio. Please check your car and respond as soon as possible. Thank you!"
+        },
+        "id": "tooluse_WlIa0L0cinl1cgtMkMu1Rt",
+        "type": "tool_call"
+       },
+       {
+        "name": "create_lost_item_ticket",
+        "args": {
+         "ride_id": "R900",
+         "item": "bag"
+        },
+        "id": "tooluse_hxPuei8RClodo9r0uAKrSC",
+        "type": "tool_call"
+       }
+      ],
+      "usage_metadata": {
+       "input_tokens": 1424,
+       "output_tokens": 224,
+       "total_tokens": 1648,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

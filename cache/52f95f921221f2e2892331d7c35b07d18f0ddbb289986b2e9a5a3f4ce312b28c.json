@@ -1,0 +1,84 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "{\"evidence\": [\"Customer: I got charged an airport fee but I wasn't going to the airport.\", \"Agent: All set! I've refunded the $12 airport fee to your account.\"], \"verdict\": \"na\", \"reason\": \"The customer raised only one issue (incorrect airport fee charge) and the agent resolved it by issuing a refund.\"}",
+    "generation_info": {
+     "finish_reason": "stop",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "{\"evidence\": [\"Customer: I got charged an airport fee but I wasn't going to the airport.\", \"Agent: All set! I've refunded the $12 airport fee to your account.\"], \"verdict\": \"na\", \"reason\": \"The customer raised only one issue (incorrect airport fee charge) and the agent resolved it by issuing a refund.\"}",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 80,
+        "prompt_tokens": 336,
+        "total_tokens": 416,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 80
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 336,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.6-sonnet",
+       "system_fingerprint": null,
+       "id": "chatcmpl-0e6e0da3-93eb-4d83-b76f-7ffa3c57e5df",
+       "finish_reason": "stop",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16abe-2c91-70d2-851c-e4ffedf09e0d-0",
+      "usage_metadata": {
+       "input_tokens": 336,
+       "output_tokens": 80,
+       "total_tokens": 416,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "tool_calls": [],
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

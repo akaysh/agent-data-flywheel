@@ -1,0 +1,20 @@
+{
+  "rides": [
+    {
+      "ride_id": "R1000",
+      "date": "2026-11-03",
+      "pickup": "Mission",
+      "dropoff": "Mission",
+      "fare": 0.0
+    }
+  ],
+  "charges": [
+    {
+      "charge_id": "C1000",
+      "ride_id": "R1000",
+      "type": "cancellation_fee",
+      "amount": 25.0,
+      "status": "settled"
+    }
+  ]
+}

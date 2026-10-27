@@ -1,0 +1,84 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "Here's what happened: your fare was $31.40 because there was a **50% prime time surge** in effect when you booked. That's why it was higher than your usual $20 rides on that route.\n\nPrime time pricing kicks in during busy periods to match demand. The base fare for that trip would normally be around $20, but the surge added 50% on top.\n\nIs there anything else you'd like to know about this charge?",
+    "generation_info": {
+     "finish_reason": "stop",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "Here's what happened: your fare was $31.40 because there was a **50% prime time surge** in effect when you booked. That's why it was higher than your usual $20 rides on that route.\n\nPrime time pricing kicks in during busy periods to match demand. The base fare for that trip would normally be around $20, but the surge added 50% on top.\n\nIs there anything else you'd like to know about this charge?",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 101,
+        "prompt_tokens": 1273,
+        "total_tokens": 1374,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 101
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 1273,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.5-haiku",
+       "system_fingerprint": null,
+       "id": "chatcmpl-fb0b5da3-dc12-448e-be33-ac9228068e1f",
+       "finish_reason": "stop",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16abd-a634-7540-9dc5-946ea046c9df-0",
+      "usage_metadata": {
+       "input_tokens": 1273,
+       "output_tokens": 101,
+       "total_tokens": 1374,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "tool_calls": [],
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

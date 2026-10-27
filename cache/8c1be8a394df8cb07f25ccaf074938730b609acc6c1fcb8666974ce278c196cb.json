@@ -1,0 +1,84 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "```json\n{\"score\": 9, \"reason\": \"The agent was professional, accurate, and methodical throughout the conversation. They proactively shared ride details, asked clarifying questions before issuing a refund, correctly identified the ride in question, broke down the charges transparently, and continued to probe to understand the actual issue rather than blindly issuing a refund. The conversation hasn't fully resolved yet, but the agent is handling it excellently \u2014 the only minor gap is the issue remains open, preventing a perfect score.\"}\n```",
+    "generation_info": {
+     "finish_reason": "stop",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "```json\n{\"score\": 9, \"reason\": \"The agent was professional, accurate, and methodical throughout the conversation. They proactively shared ride details, asked clarifying questions before issuing a refund, correctly identified the ride in question, broke down the charges transparently, and continued to probe to understand the actual issue rather than blindly issuing a refund. The conversation hasn't fully resolved yet, but the agent is handling it excellently \u2014 the only minor gap is the issue remains open, preventing a perfect score.\"}\n```",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 117,
+        "prompt_tokens": 790,
+        "total_tokens": 907,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 117
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 790,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.6-sonnet",
+       "system_fingerprint": null,
+       "id": "chatcmpl-e605214c-0778-4338-977b-03dadac49e40",
+       "finish_reason": "stop",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16abe-7529-7a50-ae37-59aaf867b37d-0",
+      "usage_metadata": {
+       "input_tokens": 790,
+       "output_tokens": 117,
+       "total_tokens": 907,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "tool_calls": [],
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

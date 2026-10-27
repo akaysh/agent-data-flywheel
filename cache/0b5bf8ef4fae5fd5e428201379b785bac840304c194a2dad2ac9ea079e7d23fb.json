@@ -1,0 +1,84 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "```json\n{\"score\": 8, \"reason\": \"The agent handled the situation professionally and honestly\u2014correctly escalating due to the $40 limit, transparently admitting they lacked access to incident details, and setting realistic expectations without making promises. The agent was empathetic and clear throughout. Minor deductions for not providing an estimated response timeframe for the review, which would have been helpful to the customer.\"}\n```",
+    "generation_info": {
+     "finish_reason": "stop",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "```json\n{\"score\": 8, \"reason\": \"The agent handled the situation professionally and honestly\u2014correctly escalating due to the $40 limit, transparently admitting they lacked access to incident details, and setting realistic expectations without making promises. The agent was empathetic and clear throughout. Minor deductions for not providing an estimated response timeframe for the review, which would have been helpful to the customer.\"}\n```",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 93,
+        "prompt_tokens": 400,
+        "total_tokens": 493,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 93
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 400,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.6-sonnet",
+       "system_fingerprint": null,
+       "id": "chatcmpl-68dc6dad-fec7-4bac-8e02-76bece3d5db1",
+       "finish_reason": "stop",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16abe-6dec-7ce0-91a5-812d6a2ddd1e-0",
+      "usage_metadata": {
+       "input_tokens": 400,
+       "output_tokens": 93,
+       "total_tokens": 493,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "tool_calls": [],
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

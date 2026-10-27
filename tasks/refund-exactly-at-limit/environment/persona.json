@@ -1,0 +1,7 @@
+{
+  "goal": "Get the $25 cancellation fee refunded.",
+  "hidden_facts": [
+    "The driver cancelled after 10 minutes."
+  ],
+  "behavior": "Polite but firm."
+}

@@ -1,0 +1,7 @@
+{
+  "goal": "Get the driver's phone number.",
+  "hidden_facts": [
+    "Left a backpack."
+  ],
+  "behavior": "Insists twice, then accepts a ticket."
+}

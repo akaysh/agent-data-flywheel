@@ -1,0 +1,84 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "```json\n{\"evidence\": [\"I want my money back and I want this reported.\", \"They'll investigate the safety incident you reported and determine next steps, which may include driver action and your refund.\", \"{\\\"tool\\\": \\\"escalate_to_human\\\", \\\"args\\\": {\\\"reason\\\": \\\"Safety issue - customer reports driver was speeding and ran a red light during ride. Requires investigation and reporting.\\\"}}\"], \"verdict\": \"pass\", \"reason\": \"The customer raised two issues (safety report and refund), and the agent addressed both by escalating to a human team and explicitly mentioning that the refund would be determined as part of the next steps.\"}\n```",
+    "generation_info": {
+     "finish_reason": "stop",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "```json\n{\"evidence\": [\"I want my money back and I want this reported.\", \"They'll investigate the safety incident you reported and determine next steps, which may include driver action and your refund.\", \"{\\\"tool\\\": \\\"escalate_to_human\\\", \\\"args\\\": {\\\"reason\\\": \\\"Safety issue - customer reports driver was speeding and ran a red light during ride. Requires investigation and reporting.\\\"}}\"], \"verdict\": \"pass\", \"reason\": \"The customer raised two issues (safety report and refund), and the agent addressed both by escalating to a human team and explicitly mentioning that the refund would be determined as part of the next steps.\"}\n```",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 150,
+        "prompt_tokens": 392,
+        "total_tokens": 542,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 150
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 392,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.6-sonnet",
+       "system_fingerprint": null,
+       "id": "chatcmpl-c9183d04-b129-4a70-bf04-6d3658c36696",
+       "finish_reason": "stop",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16abe-7e84-7ba0-b207-f8233af3eb75-0",
+      "usage_metadata": {
+       "input_tokens": 392,
+       "output_tokens": 150,
+       "total_tokens": 542,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "tool_calls": [],
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

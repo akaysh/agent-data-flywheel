@@ -1,0 +1,8 @@
+{
+  "must_call": [
+    "update_account"
+  ],
+  "must_not_call": [
+    "escalate_to_human"
+  ]
+}

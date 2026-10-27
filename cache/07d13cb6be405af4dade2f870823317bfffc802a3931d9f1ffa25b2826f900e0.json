@@ -1,0 +1,84 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "{\"evidence\": [\"{'tool': 'update_account', 'args': {'field': 'phone', 'value': '+1-555-0142'}}\"], \"verdict\": \"na\", \"reason\": \"There is only one clear action requested (phone number update), no multiple recent rides, and no risk flag mentioned in the tool results, so the ambiguity criterion does not apply.\"}",
+    "generation_info": {
+     "finish_reason": "stop",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "{\"evidence\": [\"{'tool': 'update_account', 'args': {'field': 'phone', 'value': '+1-555-0142'}}\"], \"verdict\": \"na\", \"reason\": \"There is only one clear action requested (phone number update), no multiple recent rides, and no risk flag mentioned in the tool results, so the ambiguity criterion does not apply.\"}",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 89,
+        "prompt_tokens": 373,
+        "total_tokens": 462,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 89
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 373,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.6-sonnet",
+       "system_fingerprint": null,
+       "id": "chatcmpl-9cb9da5c-2883-44b9-af1a-0571a79df8b2",
+       "finish_reason": "stop",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16abd-f42d-7863-9e6f-04faff193765-0",
+      "usage_metadata": {
+       "input_tokens": 373,
+       "output_tokens": 89,
+       "total_tokens": 462,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "tool_calls": [],
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

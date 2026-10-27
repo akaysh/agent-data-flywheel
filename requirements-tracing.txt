@@ -1,0 +1,3 @@
+# Optional. Only for the tracing cell. The notebook runs without it (it installs these itself).
+arize-phoenix==20.26.0
+openinference-instrumentation-langchain==0.1.80

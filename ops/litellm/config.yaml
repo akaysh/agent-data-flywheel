@@ -1,0 +1,30 @@
+# LiteLLM proxy for the workshop. Attendees get virtual keys (see mint_keys.py); they never see
+# the upstream credentials. Point UPSTREAM_* at any OpenAI-compatible endpoint (for example an
+# internal gateway or Bedrock behind one). Model names here are what attendees put in
+# AGENT_MODEL / FIXED_AGENT_MODEL / JUDGE_MODEL.
+#
+#   export UPSTREAM_BASE_URL=... UPSTREAM_API_KEY=... LITELLM_MASTER_KEY=sk-...
+#   litellm --config ops/litellm/config.yaml --port 4000
+model_list:
+  - model_name: workshop-agent
+    litellm_params:
+      model: openai/REPLACE_WITH_SMALL_MODEL
+      api_base: os.environ/UPSTREAM_BASE_URL
+      api_key: os.environ/UPSTREAM_API_KEY
+  - model_name: workshop-fixed-agent
+    litellm_params:
+      model: openai/REPLACE_WITH_STRONGER_MODEL
+      api_base: os.environ/UPSTREAM_BASE_URL
+      api_key: os.environ/UPSTREAM_API_KEY
+  - model_name: workshop-judge
+    litellm_params:
+      model: openai/REPLACE_WITH_STRONGER_MODEL
+      api_base: os.environ/UPSTREAM_BASE_URL
+      api_key: os.environ/UPSTREAM_API_KEY
+
+general_settings:
+  master_key: os.environ/LITELLM_MASTER_KEY
+  # virtual keys need a database: set DATABASE_URL to a Postgres instance
+
+litellm_settings:
+  drop_params: true   # some upstream models reject params like temperature variants

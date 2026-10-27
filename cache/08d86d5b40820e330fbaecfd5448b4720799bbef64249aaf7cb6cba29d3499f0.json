@@ -1,0 +1,84 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "Here's what I found! Rides R600 and R602 don't show any itemized charges, but **R601** (Oct 27, SoMa \u2192 Oakland, $39.00) has a breakdown:\n\n- **Fare:** $31.00\n- **Toll:** $8.00\n\nThat $8.00 toll charge lines up with what you mentioned! Does that look like the unexpected charge? If you didn't expect to go through a toll on that trip, I can refund it for you.",
+    "generation_info": {
+     "finish_reason": "stop",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "Here's what I found! Rides R600 and R602 don't show any itemized charges, but **R601** (Oct 27, SoMa \u2192 Oakland, $39.00) has a breakdown:\n\n- **Fare:** $31.00\n- **Toll:** $8.00\n\nThat $8.00 toll charge lines up with what you mentioned! Does that look like the unexpected charge? If you didn't expect to go through a toll on that trip, I can refund it for you.",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 118,
+        "prompt_tokens": 1844,
+        "total_tokens": 1962,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 118
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 1844,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.6-sonnet",
+       "system_fingerprint": null,
+       "id": "chatcmpl-5eb686b4-3088-483b-b002-4a3be1fc3e99",
+       "finish_reason": "stop",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16ac0-0083-78f0-a0fc-b9c9fc4dffcf-0",
+      "usage_metadata": {
+       "input_tokens": 1844,
+       "output_tokens": 118,
+       "total_tokens": 1962,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "tool_calls": [],
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

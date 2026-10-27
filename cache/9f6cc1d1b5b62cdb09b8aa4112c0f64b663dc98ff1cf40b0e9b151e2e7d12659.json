@@ -1,0 +1,84 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "I understand - so you're saying the total charge was $8 more than expected. Let me clarify what you were charged on that ride:\n\n- Fare: $31.00\n- Toll: $8.00\n- **Total: $39.00**\n\nWere you expecting to pay less than $39 total for that SoMa to Oakland trip? If so, what amount were you expecting?\n\nThat'll help me figure out if there's an error to refund.",
+    "generation_info": {
+     "finish_reason": "stop",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "I understand - so you're saying the total charge was $8 more than expected. Let me clarify what you were charged on that ride:\n\n- Fare: $31.00\n- Toll: $8.00\n- **Total: $39.00**\n\nWere you expecting to pay less than $39 total for that SoMa to Oakland trip? If so, what amount were you expecting?\n\nThat'll help me figure out if there's an error to refund.",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 108,
+        "prompt_tokens": 2130,
+        "total_tokens": 2238,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 108
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 2130,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.5-haiku",
+       "system_fingerprint": null,
+       "id": "chatcmpl-0f5c11aa-515c-4d75-9baa-23df51242d02",
+       "finish_reason": "stop",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16abf-5cf9-7252-8f9c-78c03707e893-0",
+      "usage_metadata": {
+       "input_tokens": 2130,
+       "output_tokens": 108,
+       "total_tokens": 2238,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "tool_calls": [],
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

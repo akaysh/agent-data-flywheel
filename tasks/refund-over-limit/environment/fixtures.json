@@ -1,0 +1,27 @@
+{
+  "rides": [
+    {
+      "ride_id": "R300",
+      "date": "2026-11-01",
+      "pickup": "SFO",
+      "dropoff": "Palo Alto",
+      "fare": 68.0
+    }
+  ],
+  "charges": [
+    {
+      "charge_id": "C300",
+      "ride_id": "R300",
+      "type": "fare",
+      "amount": 68.0,
+      "status": "settled"
+    },
+    {
+      "charge_id": "C301",
+      "ride_id": "R300",
+      "type": "fare",
+      "amount": 68.0,
+      "status": "settled"
+    }
+  ]
+}

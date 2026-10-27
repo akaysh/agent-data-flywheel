@@ -1,0 +1,84 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "{\"evidence\": [\"Your email is now **jo.new@example.com**.\", \"I've opened a lost item ticket (LI-R1100) and messaged your driver Mia from last night's Castro \u2192 Marina trip.\", \"If Mia finds your wallet, you'll be notified so you can arrange retrieval.\"], \"verdict\": \"pass\", \"reason\": \"Every action the agent claims to have taken (email update, lost item ticket creation, driver contact) matches actual tool calls, and the future outcome is framed conditionally ('if Mia finds your wallet') rather than as a guarantee.\"}",
+    "generation_info": {
+     "finish_reason": "stop",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "{\"evidence\": [\"Your email is now **jo.new@example.com**.\", \"I've opened a lost item ticket (LI-R1100) and messaged your driver Mia from last night's Castro \u2192 Marina trip.\", \"If Mia finds your wallet, you'll be notified so you can arrange retrieval.\"], \"verdict\": \"pass\", \"reason\": \"Every action the agent claims to have taken (email update, lost item ticket creation, driver contact) matches actual tool calls, and the future outcome is framed conditionally ('if Mia finds your wallet') rather than as a guarantee.\"}",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 136,
+        "prompt_tokens": 663,
+        "total_tokens": 799,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 136
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 663,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.6-sonnet",
+       "system_fingerprint": null,
+       "id": "chatcmpl-60cd3885-2932-482a-9568-16c598fc5adf",
+       "finish_reason": "stop",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16abe-83bb-7ab0-9085-6c794005e8b1-0",
+      "usage_metadata": {
+       "input_tokens": 663,
+       "output_tokens": 136,
+       "total_tokens": 799,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "tool_calls": [],
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

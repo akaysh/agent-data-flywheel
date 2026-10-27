@@ -1,0 +1,84 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "{\"evidence\": [\"Customer: I was billed a $25 cancellation fee but my driver cancelled on me. Please refund it.\", \"Agent: Done! I've refunded the $25 cancellation fee to your account.\"], \"verdict\": \"na\", \"reason\": \"The customer raised only one issue (a $25 cancellation fee refund) and the agent handled it by issuing the refund.\"}",
+    "generation_info": {
+     "finish_reason": "stop",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "{\"evidence\": [\"Customer: I was billed a $25 cancellation fee but my driver cancelled on me. Please refund it.\", \"Agent: Done! I've refunded the $25 cancellation fee to your account.\"], \"verdict\": \"na\", \"reason\": \"The customer raised only one issue (a $25 cancellation fee refund) and the agent handled it by issuing the refund.\"}",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 93,
+        "prompt_tokens": 348,
+        "total_tokens": 441,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 93
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 348,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.6-sonnet",
+       "system_fingerprint": null,
+       "id": "chatcmpl-2be0ac88-33ba-455e-809b-9a214800d073",
+       "finish_reason": "stop",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16abe-5dc2-77f3-96ec-5df975eefbf1-0",
+      "usage_metadata": {
+       "input_tokens": 348,
+       "output_tokens": 93,
+       "total_tokens": 441,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "tool_calls": [],
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

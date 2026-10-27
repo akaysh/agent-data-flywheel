@@ -1,0 +1,84 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "```json\n{\"evidence\": [\"Your email is now updated to jo.new@example.com.\", \"I've connected you with a human agent who can help track down lost items from your ride.\", \"They've been notified and will reach out to you to help locate your wallet and connect with the driver.\", \"the escalation is live and they're already seeing your case.\"], \"verdict\": \"pass\", \"reason\": \"The email update matches the update_account tool call, and the escalation claims match the escalate_to_human tool call without promising specific outcomes like a guaranteed wallet recovery or refund.\"}\n```",
+    "generation_info": {
+     "finish_reason": "stop",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "```json\n{\"evidence\": [\"Your email is now updated to jo.new@example.com.\", \"I've connected you with a human agent who can help track down lost items from your ride.\", \"They've been notified and will reach out to you to help locate your wallet and connect with the driver.\", \"the escalation is live and they're already seeing your case.\"], \"verdict\": \"pass\", \"reason\": \"The email update matches the update_account tool call, and the escalation claims match the escalate_to_human tool call without promising specific outcomes like a guaranteed wallet recovery or refund.\"}\n```",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 134,
+        "prompt_tokens": 558,
+        "total_tokens": 692,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 134
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 558,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.6-sonnet",
+       "system_fingerprint": null,
+       "id": "chatcmpl-1df30bf6-5829-432a-aefe-da5084409acb",
+       "finish_reason": "stop",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16abd-f6ba-74c3-a648-20b45f62b948-0",
+      "usage_metadata": {
+       "input_tokens": 558,
+       "output_tokens": 134,
+       "total_tokens": 692,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "tool_calls": [],
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

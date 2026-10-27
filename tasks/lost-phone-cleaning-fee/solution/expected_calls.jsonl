@@ -1,0 +1,4 @@
+{"tool": "create_lost_item_ticket", "args": {"ride_id": "R500", "item": "phone"}}
+{"tool": "contact_driver", "args": {"ride_id": "R500"}}
+{"tool": "get_charges", "args": {"ride_id": "R500"}}
+{"tool": "issue_refund", "args": {"ride_id": "R500", "charge_id": "C501", "amount": 20.0}}

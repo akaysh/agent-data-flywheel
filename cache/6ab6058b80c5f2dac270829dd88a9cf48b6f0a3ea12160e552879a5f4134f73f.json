@@ -1,0 +1,84 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "```json\n{\"evidence\": [\"I've refunded **$8.00** for the toll charge on your Oct 27 SoMa \u2192 Oakland ride.\", \"You should see it back on your original payment method within 3\u20135 business days.\"], \"verdict\": \"pass\", \"reason\": \"The agent stated it issued an $8.00 refund, which matches the actual tool call issue_refund for ride R601, charge C602, amount 8.0; the 3\u20135 business days timeline is a standard processing statement, not a guaranteed outcome beyond what the refund action covers.\"}\n```",
+    "generation_info": {
+     "finish_reason": "stop",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "```json\n{\"evidence\": [\"I've refunded **$8.00** for the toll charge on your Oct 27 SoMa \u2192 Oakland ride.\", \"You should see it back on your original payment method within 3\u20135 business days.\"], \"verdict\": \"pass\", \"reason\": \"The agent stated it issued an $8.00 refund, which matches the actual tool call issue_refund for ride R601, charge C602, amount 8.0; the 3\u20135 business days timeline is a standard processing statement, not a guaranteed outcome beyond what the refund action covers.\"}\n```",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 138,
+        "prompt_tokens": 764,
+        "total_tokens": 902,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 138
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 764,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.6-sonnet",
+       "system_fingerprint": null,
+       "id": "chatcmpl-8fdf4051-da72-4a77-97cc-6100b751e4ae",
+       "finish_reason": "stop",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16abe-c304-7013-bfe5-b53a5d7f1b47-0",
+      "usage_metadata": {
+       "input_tokens": 764,
+       "output_tokens": 138,
+       "total_tokens": 902,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "tool_calls": [],
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

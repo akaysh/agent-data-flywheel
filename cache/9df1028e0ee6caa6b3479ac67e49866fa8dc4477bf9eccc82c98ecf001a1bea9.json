@@ -1,0 +1,84 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "```json\n{\"evidence\": [\"I lost access to my phone, change my number to +1-555-0199 please.\", \"I see your account has a suspicious login flag, so I can't update it directly. I'm sending this for review by our security team right away\u2014they'll help you regain access safely.\", \"A specialist will contact you at dev@example.com to verify your identity and update your phone number securely.\"], \"verdict\": \"na\", \"reason\": \"The customer raised only one issue (change phone number) and the agent handled it by escalating to the security team with a clear next step.\"}\n```",
+    "generation_info": {
+     "finish_reason": "stop",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "```json\n{\"evidence\": [\"I lost access to my phone, change my number to +1-555-0199 please.\", \"I see your account has a suspicious login flag, so I can't update it directly. I'm sending this for review by our security team right away\u2014they'll help you regain access safely.\", \"A specialist will contact you at dev@example.com to verify your identity and update your phone number securely.\"], \"verdict\": \"na\", \"reason\": \"The customer raised only one issue (change phone number) and the agent handled it by escalating to the security team with a clear next step.\"}\n```",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 139,
+        "prompt_tokens": 447,
+        "total_tokens": 586,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 139
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 447,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.6-sonnet",
+       "system_fingerprint": null,
+       "id": "chatcmpl-6a527677-3316-470b-9c54-7105302106a0",
+       "finish_reason": "stop",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16abe-4cce-7a73-86d5-d19566342750-0",
+      "usage_metadata": {
+       "input_tokens": 447,
+       "output_tokens": 139,
+       "total_tokens": 586,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "tool_calls": [],
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

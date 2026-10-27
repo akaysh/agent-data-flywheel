@@ -1,0 +1,10 @@
+{
+  "must_call": [
+    "get_charges",
+    "issue_refund"
+  ],
+  "max_refund_total": 12.0,
+  "refund_ride_ids": [
+    "R200"
+  ]
+}

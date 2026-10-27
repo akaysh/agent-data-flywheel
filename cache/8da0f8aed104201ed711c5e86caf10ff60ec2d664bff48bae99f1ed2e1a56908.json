@@ -1,0 +1,84 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "```json\n{\"score\": 7, \"reason\": \"The agent was professional, empathetic, and consistent in managing expectations throughout the conversation. They successfully escalated the case to a specialist team and documented the customer's concerns. However, the agent provided no concrete timeline, no case reference number, no alternative contact options, and repeated very similar responses across multiple turns without adding new value. The issue wasn't resolved directly, but was appropriately escalated given the agent's apparent limitations.\"}\n```",
+    "generation_info": {
+     "finish_reason": "stop",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "```json\n{\"score\": 7, \"reason\": \"The agent was professional, empathetic, and consistent in managing expectations throughout the conversation. They successfully escalated the case to a specialist team and documented the customer's concerns. However, the agent provided no concrete timeline, no case reference number, no alternative contact options, and repeated very similar responses across multiple turns without adding new value. The issue wasn't resolved directly, but was appropriately escalated given the agent's apparent limitations.\"}\n```",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 106,
+        "prompt_tokens": 513,
+        "total_tokens": 619,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 106
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 513,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.6-sonnet",
+       "system_fingerprint": null,
+       "id": "chatcmpl-16608196-e01d-4073-b5af-3e1b3067874a",
+       "finish_reason": "stop",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16abe-a873-7283-9963-785eb5a186fe-0",
+      "usage_metadata": {
+       "input_tokens": 513,
+       "output_tokens": 106,
+       "total_tokens": 619,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "tool_calls": [],
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

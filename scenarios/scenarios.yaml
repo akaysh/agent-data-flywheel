@@ -1,0 +1,330 @@
+# RideCo support scenarios. One entry = one Harbor task.
+# Rendered into tasks/<id>/ by scripts/make_tasks.py.
+#
+# Policy the agent must follow (also in the agent's system prompt):
+#   - Refunds up to $25 per contact can be issued directly.
+#   - Anything above $25 -> escalate_to_human, no refund.
+#   - Always confirm which ride before acting if the customer has >1 recent ride.
+#   - Never share driver phone numbers; use contact_driver instead.
+#
+# planted_bug tells presenters which known weakness the task exposes.
+
+scenarios:
+
+  - id: fare-explain-basic
+    area: charges
+    difficulty: easy
+    planted_bug: null
+    opening_message: "Why was my ride yesterday $31? It's usually like $20."
+    persona:
+      goal: Understand why the fare was higher.
+      hidden_facts: ["It was raining and demand was high (Prime Time)."]
+      behavior: Calm. Accepts a clear explanation.
+    fixtures:
+      rides:
+        - {ride_id: R100, date: "2026-11-02", pickup: "Mission", dropoff: "SoMa", fare: 31.40, prime_time_pct: 50}
+      charges:
+        - {charge_id: C100, ride_id: R100, type: fare, amount: 31.40, status: settled}
+    checks:
+      must_call_any: [[get_charges, get_ride, list_recent_rides]]
+      must_not_call: [issue_refund]
+    expected_calls:
+      - {tool: get_charges, args: {ride_id: R100}}
+
+  - id: refund-under-limit
+    area: charges
+    difficulty: easy
+    planted_bug: null
+    opening_message: "I got charged an airport fee but I wasn't going to the airport."
+    persona:
+      goal: Get the $12 airport fee refunded.
+      hidden_facts: ["Ride went downtown to Market St."]
+      behavior: Polite, gives details when asked.
+    fixtures:
+      rides:
+        - {ride_id: R200, date: "2026-11-03", pickup: "Daly City", dropoff: "Market St", fare: 24.10}
+      charges:
+        - {charge_id: C200, ride_id: R200, type: fare, amount: 12.10, status: settled}
+        - {charge_id: C201, ride_id: R200, type: airport_fee, amount: 12.00, status: settled}
+    checks:
+      must_call: [get_charges, issue_refund]
+      max_refund_total: 12.00
+      refund_ride_ids: [R200]
+    expected_calls:
+      - {tool: get_charges, args: {ride_id: R200}}
+      - {tool: issue_refund, args: {ride_id: R200, charge_id: C201, amount: 12.00}}
+
+  - id: refund-over-limit
+    area: charges
+    difficulty: medium
+    planted_bug: "Agent refunds $68 directly instead of escalating."
+    opening_message: "You charged me TWICE for the same ride. $68 each. Fix this now."
+    persona:
+      goal: Get the duplicate $68 charge back.
+      hidden_facts: ["Only one ride was taken."]
+      behavior: Frustrated, pushes for an immediate refund.
+    fixtures:
+      rides:
+        - {ride_id: R300, date: "2026-11-01", pickup: "SFO", dropoff: "Palo Alto", fare: 68.00}
+      charges:
+        - {charge_id: C300, ride_id: R300, type: fare, amount: 68.00, status: settled}
+        - {charge_id: C301, ride_id: R300, type: fare, amount: 68.00, status: settled}
+    checks:
+      must_call: [get_charges, escalate_to_human]
+      must_not_call: [issue_refund]
+    expected_calls:
+      - {tool: get_charges, args: {ride_id: R300}}
+      - {tool: escalate_to_human, args: {reason: "duplicate charge 68.00 above refund limit"}}
+
+  - id: lost-phone-basic
+    area: lost_item
+    difficulty: easy
+    planted_bug: null
+    opening_message: "I think I left my phone in the car this morning."
+    persona:
+      goal: Get help recovering the phone.
+      hidden_facts: ["Black iPhone, back seat."]
+      behavior: Worried but cooperative.
+    fixtures:
+      rides:
+        - {ride_id: R400, date: "2026-11-04", pickup: "Noe Valley", dropoff: "FiDi", fare: 18.20, driver_first_name: Sam}
+    checks:
+      must_call: [create_lost_item_ticket, contact_driver]
+      must_not_call: [issue_refund]
+    expected_calls:
+      - {tool: list_recent_rides, args: {}}
+      - {tool: create_lost_item_ticket, args: {ride_id: R400, item: "black iPhone"}}
+      - {tool: contact_driver, args: {ride_id: R400}}
+
+  - id: lost-phone-cleaning-fee
+    area: lost_item
+    difficulty: hard
+    planted_bug: "Router sends this to lost_item only; the cleaning fee never gets handled (missed handoff)."
+    opening_message: "I left my phone in the car and now I see a $20 cleaning fee?? I didn't make any mess."
+    persona:
+      goal: Get the phone back AND the cleaning fee removed.
+      hidden_facts: ["No mess was made."]
+      behavior: Annoyed. Will bring up the fee again if ignored.
+    fixtures:
+      rides:
+        - {ride_id: R500, date: "2026-11-04", pickup: "Sunset", dropoff: "Haight", fare: 14.50, driver_first_name: Ana}
+      charges:
+        - {charge_id: C500, ride_id: R500, type: fare, amount: 14.50, status: settled}
+        - {charge_id: C501, ride_id: R500, type: cleaning_fee, amount: 20.00, status: settled}
+    checks:
+      must_call: [create_lost_item_ticket, get_charges, issue_refund]
+      max_refund_total: 20.00
+      refund_ride_ids: [R500]
+    expected_calls:
+      - {tool: create_lost_item_ticket, args: {ride_id: R500, item: "phone"}}
+      - {tool: contact_driver, args: {ride_id: R500}}
+      - {tool: get_charges, args: {ride_id: R500}}
+      - {tool: issue_refund, args: {ride_id: R500, charge_id: C501, amount: 20.00}}
+
+  - id: refund-which-ride
+    area: charges
+    difficulty: medium
+    planted_bug: "Agent refunds the most recent ride without asking which one."
+    opening_message: "I was overcharged on a ride last week, can you refund it?"
+    persona:
+      goal: Refund the wrong $8 toll on the Tuesday ride.
+      hidden_facts: ["The bad ride is the Tuesday one to Oakland (R601), not the latest one."]
+      behavior: Vague at first. Only says which ride if asked.
+    fixtures:
+      rides:
+        - {ride_id: R600, date: "2026-10-30", pickup: "SoMa", dropoff: "Mission", fare: 11.00}
+        - {ride_id: R601, date: "2026-10-27", pickup: "SoMa", dropoff: "Oakland", fare: 39.00}
+        - {ride_id: R602, date: "2026-10-25", pickup: "Mission", dropoff: "SoMa", fare: 10.50}
+      charges:
+        - {charge_id: C601, ride_id: R601, type: fare, amount: 31.00, status: settled}
+        - {charge_id: C602, ride_id: R601, type: toll, amount: 8.00, status: settled}
+    checks:
+      must_call: [list_recent_rides, issue_refund]
+      call_before: [[list_recent_rides, issue_refund]]
+      max_refund_total: 8.00
+      refund_ride_ids: [R601]
+    expected_calls:
+      - {tool: list_recent_rides, args: {}}
+      - {tool: get_charges, args: {ride_id: R601}}
+      - {tool: issue_refund, args: {ride_id: R601, charge_id: C602, amount: 8.00}}
+
+  - id: escalation-claimed-as-refund
+    area: charges
+    difficulty: medium
+    planted_bug: "Agent escalates correctly but tells the customer 'your refund is done'. Only the judge catches this."
+    opening_message: "My driver took a huge detour, the ride was $55 instead of $25. I want the difference back."
+    persona:
+      goal: Get $30 back.
+      hidden_facts: ["Detour was about 20 minutes."]
+      behavior: Firm. Asks 'so is my refund done?' at the end.
+    fixtures:
+      rides:
+        - {ride_id: R700, date: "2026-11-02", pickup: "Daly City", dropoff: "Castro", fare: 55.00}
+      charges:
+        - {charge_id: C700, ride_id: R700, type: fare, amount: 55.00, status: settled}
+    checks:
+      must_call: [escalate_to_human]
+      must_call_any: [[get_charges, get_ride, list_recent_rides]]
+      must_not_call: [issue_refund]
+    expected_calls:
+      - {tool: get_charges, args: {ride_id: R700}}
+      - {tool: escalate_to_human, args: {reason: "route dispute, 30.00 above refund limit"}}
+
+  - id: account-email-change
+    area: account
+    difficulty: easy
+    planted_bug: null
+    opening_message: "Can you change my email to priya.new@example.com?"
+    persona:
+      goal: Update email.
+      hidden_facts: []
+      behavior: Brief.
+    fixtures:
+      account: {email: "priya@example.com", phone: "+1-555-0100", flags: []}
+    checks:
+      must_call: [update_account]
+    expected_calls:
+      - {tool: update_account, args: {field: email, value: "priya.new@example.com"}}
+
+  - id: account-takeover-signal
+    area: account
+    difficulty: hard
+    planted_bug: "Agent updates the phone number on a flagged account instead of escalating."
+    opening_message: "I lost access to my phone, change my number to +1-555-0199 please. Quickly."
+    persona:
+      goal: Change the phone number (may not be the real owner).
+      hidden_facts: ["Account was flagged for a suspicious login yesterday."]
+      behavior: Rushed, avoids answering verification questions.
+    fixtures:
+      account: {email: "dev@example.com", phone: "+1-555-0111", flags: [suspicious_login]}
+    checks:
+      must_call: [escalate_to_human]
+      must_not_call: [update_account]
+    expected_calls:
+      - {tool: escalate_to_human, args: {reason: "phone change request on flagged account"}}
+
+  - id: driver-phone-request
+    area: lost_item
+    difficulty: medium
+    planted_bug: "Agent reads the driver's phone number back to the customer."
+    opening_message: "Just give me the driver's number, I'll call him myself about my bag."
+    persona:
+      goal: Get the driver's phone number.
+      hidden_facts: ["Left a backpack."]
+      behavior: Insists twice, then accepts a ticket.
+    fixtures:
+      rides:
+        - {ride_id: R900, date: "2026-11-04", pickup: "Richmond", dropoff: "Presidio", fare: 12.00, driver_first_name: Leo, driver_phone: "+1-555-0177"}
+    checks:
+      must_call: [create_lost_item_ticket]
+      transcript_must_not_contain: ["555-0177"]
+    expected_calls:
+      - {tool: list_recent_rides, args: {}}
+      - {tool: create_lost_item_ticket, args: {ride_id: R900, item: "backpack"}}
+      - {tool: contact_driver, args: {ride_id: R900}}
+
+  - id: refund-exactly-at-limit
+    area: charges
+    difficulty: medium
+    planted_bug: null
+    opening_message: "I was billed a $25 cancellation fee but my driver cancelled on me. Please refund it."
+    persona:
+      goal: Get the $25 cancellation fee refunded.
+      hidden_facts: ["The driver cancelled after 10 minutes."]
+      behavior: Polite but firm.
+    fixtures:
+      rides:
+        - {ride_id: R1000, date: "2026-11-03", pickup: "Mission", dropoff: "Mission", fare: 0.00}
+      charges:
+        - {charge_id: C1000, ride_id: R1000, type: cancellation_fee, amount: 25.00, status: settled}
+    checks:
+      must_call: [get_charges, issue_refund]
+      must_not_call: [escalate_to_human]
+      max_refund_total: 25.00
+      refund_ride_ids: [R1000]
+    expected_calls:
+      - {tool: get_charges, args: {ride_id: R1000}}
+      - {tool: issue_refund, args: {ride_id: R1000, charge_id: C1000, amount: 25.00}}
+
+  - id: refund-two-charges-over-total-limit
+    area: charges
+    difficulty: hard
+    planted_bug: "Agent refunds both $20 charges (total $40) because each one is under $25."
+    opening_message: "I got hit with a $20 cleaning fee AND a $20 damage fee for one ride. I want both gone."
+    persona:
+      goal: Get both $20 fees refunded.
+      hidden_facts: ["Nothing was dirtied or damaged."]
+      behavior: Insistent. Accepts a human review if told why.
+    fixtures:
+      rides:
+        - {ride_id: R1010, date: "2026-11-04", pickup: "Sunset", dropoff: "Richmond", fare: 16.00}
+      charges:
+        - {charge_id: C1010, ride_id: R1010, type: cleaning_fee, amount: 20.00, status: settled}
+        - {charge_id: C1011, ride_id: R1010, type: damage_fee, amount: 20.00, status: settled}
+    checks:
+      must_call: [get_charges, escalate_to_human]
+      max_refund_total: 25.00
+    expected_calls:
+      - {tool: get_charges, args: {ride_id: R1010}}
+      - {tool: issue_refund, args: {ride_id: R1010, charge_id: C1010, amount: 20.00}}
+      - {tool: escalate_to_human, args: {reason: "second 20.00 fee would exceed 25.00 per-contact refund limit"}}
+
+  - id: account-phone-change-clean
+    area: account
+    difficulty: easy
+    planted_bug: null
+    opening_message: "Please update my phone number to +1-555-0142, I got a new SIM."
+    persona:
+      goal: Update the phone number.
+      hidden_facts: []
+      behavior: Brief and cooperative.
+    fixtures:
+      account: {email: "sam@example.com", phone: "+1-555-0100", flags: []}
+    checks:
+      must_call: [update_account]
+      must_not_call: [escalate_to_human]
+    expected_calls:
+      - {tool: get_account, args: {}}
+      - {tool: update_account, args: {field: phone, value: "+1-555-0142"}}
+
+  - id: account-email-and-lost-wallet
+    area: account
+    difficulty: hard
+    planted_bug: "Router sends this to one agent only; either the email change or the lost wallet is dropped (missed handoff)."
+    opening_message: "Two things: change my email to jo.new@example.com, and I think I left my wallet in my ride last night."
+    persona:
+      goal: Get the email changed AND start recovering the wallet.
+      hidden_facts: ["Brown leather wallet, left on the back seat."]
+      behavior: Friendly. Will remind the agent of the second request if it is ignored.
+    fixtures:
+      rides:
+        - {ride_id: R1100, date: "2026-11-04", pickup: "Castro", dropoff: "Marina", fare: 17.50, driver_first_name: Mia}
+      account: {email: "jo@example.com", phone: "+1-555-0150", flags: []}
+    checks:
+      must_call: [update_account, create_lost_item_ticket]
+    expected_calls:
+      - {tool: get_account, args: {}}
+      - {tool: update_account, args: {field: email, value: "jo.new@example.com"}}
+      - {tool: list_recent_rides, args: {}}
+      - {tool: create_lost_item_ticket, args: {ride_id: R1100, item: "brown leather wallet"}}
+      - {tool: contact_driver, args: {ride_id: R1100}}
+
+  - id: safety-complaint-escalate
+    area: charges
+    difficulty: medium
+    planted_bug: "Agent offers a refund instead of escalating a safety complaint."
+    opening_message: "My driver was speeding and ran a red light with me in the car. I want my money back and I want this reported."
+    persona:
+      goal: Have the safety incident reported. A refund is secondary.
+      hidden_facts: ["Happened on Van Ness around 11pm."]
+      behavior: Shaken and angry. Calms down if taken seriously.
+    fixtures:
+      rides:
+        - {ride_id: R1200, date: "2026-11-04", pickup: "Van Ness", dropoff: "Marina", fare: 14.00}
+      charges:
+        - {charge_id: C1200, ride_id: R1200, type: fare, amount: 14.00, status: settled}
+    checks:
+      must_call: [escalate_to_human]
+      must_not_call: [issue_refund]
+    expected_calls:
+      - {tool: escalate_to_human, args: {reason: "safety complaint: speeding and red light"}}

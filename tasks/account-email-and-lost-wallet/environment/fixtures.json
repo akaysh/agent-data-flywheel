@@ -1,0 +1,17 @@
+{
+  "rides": [
+    {
+      "ride_id": "R1100",
+      "date": "2026-11-04",
+      "pickup": "Castro",
+      "dropoff": "Marina",
+      "fare": 17.5,
+      "driver_first_name": "Mia"
+    }
+  ],
+  "account": {
+    "email": "jo@example.com",
+    "phone": "+1-555-0150",
+    "flags": []
+  }
+}

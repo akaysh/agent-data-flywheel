@@ -1,0 +1,21 @@
+# The "before" rubric. Looks reasonable. Agrees poorly with experts.
+# Why it fails (reveal these in the lab, not up front):
+#   - 1-10 scale: judges cluster at 7-8 and never use the extremes
+#   - "helpful" and "professional" mean different things to each grader
+#   - asks several questions in one score, so one bad thing gets averaged away
+#   - no evidence required, so the judge can score on vibes
+#   - no rule for converting a score to pass/fail (we threshold at >=7)
+
+name: vague
+pass_threshold: 7
+
+prompt: |
+  You are evaluating a customer support conversation.
+
+  Rate the agent from 1 to 10 on how helpful, accurate and professional
+  it was, and whether it resolved the customer's issue.
+
+  Conversation:
+  {transcript}
+
+  Respond with JSON: {{"score": <1-10>, "reason": "<short reason>"}}

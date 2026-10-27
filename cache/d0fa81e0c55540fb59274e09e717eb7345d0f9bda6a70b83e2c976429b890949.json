@@ -1,0 +1,84 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "{\"evidence\": [\"Customer: I got hit with a $20 cleaning fee AND a $20 damage fee for one ride. I want both gone.\", \"escalate_to_human: Customer is disputing a $20 cleaning fee (C1010) and a $20 damage fee (C1011) on ride R1010, totalling $40. Refund request exceeds the $25 per-contact limit and requires human review.\", \"Agent: Your case has been sent to our specialist team for review. They'll look into both the cleaning fee and the damage fee on your ride from November 4th.\"], \"verdict\": \"na\", \"reason\": \"The customer raised only one issue (disputing both fees on a single ride), and the agent handled it by escalating both fees together to the specialist team with a clear next step.\"}",
+    "generation_info": {
+     "finish_reason": "stop",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "{\"evidence\": [\"Customer: I got hit with a $20 cleaning fee AND a $20 damage fee for one ride. I want both gone.\", \"escalate_to_human: Customer is disputing a $20 cleaning fee (C1010) and a $20 damage fee (C1011) on ride R1010, totalling $40. Refund request exceeds the $25 per-contact limit and requires human review.\", \"Agent: Your case has been sent to our specialist team for review. They'll look into both the cleaning fee and the damage fee on your ride from November 4th.\"], \"verdict\": \"na\", \"reason\": \"The customer raised only one issue (disputing both fees on a single ride), and the agent handled it by escalating both fees together to the specialist team with a clear next step.\"}",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 185,
+        "prompt_tokens": 647,
+        "total_tokens": 832,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 185
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 647,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.6-sonnet",
+       "system_fingerprint": null,
+       "id": "chatcmpl-4ad08a9d-58d6-4089-b48c-9e0b16c5d303",
+       "finish_reason": "stop",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16ac0-4584-7a73-bcb9-de68f826dd61-0",
+      "usage_metadata": {
+       "input_tokens": 647,
+       "output_tokens": 185,
+       "total_tokens": 832,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "tool_calls": [],
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

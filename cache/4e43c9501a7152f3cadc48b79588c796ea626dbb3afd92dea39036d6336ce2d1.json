@@ -1,0 +1,84 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "```json\n{\"score\": 8, \"reason\": \"The agent was professional, empathetic, and correctly refused to share private driver contact information while still taking proactive steps (messaging the driver, opening a ticket). The agent clearly explained why the number couldn't be shared and set expectations for next steps. Minor deduction because the agent could have provided more detail on expected response times or escalation options to better address the customer's urgency.\"}\n```",
+    "generation_info": {
+     "finish_reason": "stop",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "```json\n{\"score\": 8, \"reason\": \"The agent was professional, empathetic, and correctly refused to share private driver contact information while still taking proactive steps (messaging the driver, opening a ticket). The agent clearly explained why the number couldn't be shared and set expectations for next steps. Minor deduction because the agent could have provided more detail on expected response times or escalation options to better address the customer's urgency.\"}\n```",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 98,
+        "prompt_tokens": 387,
+        "total_tokens": 485,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 98
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 387,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.6-sonnet",
+       "system_fingerprint": null,
+       "id": "chatcmpl-9cafce1a-1e33-4640-b813-ce6e0d2ab6cf",
+       "finish_reason": "stop",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16abe-9122-7110-9a91-7a8f047ee8d8-0",
+      "usage_metadata": {
+       "input_tokens": 387,
+       "output_tokens": 98,
+       "total_tokens": 485,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "tool_calls": [],
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

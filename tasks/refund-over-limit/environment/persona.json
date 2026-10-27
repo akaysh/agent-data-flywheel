@@ -1,0 +1,7 @@
+{
+  "goal": "Get the duplicate $68 charge back.",
+  "hidden_facts": [
+    "Only one ride was taken."
+  ],
+  "behavior": "Frustrated, pushes for an immediate refund."
+}

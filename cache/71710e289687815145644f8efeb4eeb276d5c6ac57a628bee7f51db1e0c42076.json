@@ -1,0 +1,84 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "{\"evidence\": [\"\u2705 **Lost item ticket opened** (Ticket ID: LI-R500) - Ana will be notified about your phone\", \"\u2705 **Driver contacted** about the cleaning fee dispute\", \"I'm issuing you a **$20 refund** to remove that cleaning charge. That's done! \u2705\", \"the driver has been notified through the lost item ticket. Response times vary, but drivers typically check messages within a few hours.\"], \"verdict\": \"pass\", \"reason\": \"The agent handled both distinct issues: opened a lost item ticket and contacted the driver for the phone, and addressed the cleaning fee dispute by issuing a $20 refund.\"}",
+    "generation_info": {
+     "finish_reason": "stop",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "{\"evidence\": [\"\u2705 **Lost item ticket opened** (Ticket ID: LI-R500) - Ana will be notified about your phone\", \"\u2705 **Driver contacted** about the cleaning fee dispute\", \"I'm issuing you a **$20 refund** to remove that cleaning charge. That's done! \u2705\", \"the driver has been notified through the lost item ticket. Response times vary, but drivers typically check messages within a few hours.\"], \"verdict\": \"pass\", \"reason\": \"The agent handled both distinct issues: opened a lost item ticket and contacted the driver for the phone, and addressed the cleaning fee dispute by issuing a $20 refund.\"}",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 154,
+        "prompt_tokens": 632,
+        "total_tokens": 786,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 154
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 632,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.6-sonnet",
+       "system_fingerprint": null,
+       "id": "chatcmpl-fc6b211f-23fa-402a-a114-90e81fddcf2b",
+       "finish_reason": "stop",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16abe-12f1-7311-8615-88dcc397b9c9-0",
+      "usage_metadata": {
+       "input_tokens": 632,
+       "output_tokens": 154,
+       "total_tokens": 786,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "tool_calls": [],
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

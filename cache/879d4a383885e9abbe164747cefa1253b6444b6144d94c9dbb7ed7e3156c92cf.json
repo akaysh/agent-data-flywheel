@@ -1,0 +1,84 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "I found the issue\u2014you were charged twice for the same ride ($68 + $68). This is a billing error that needs to be reviewed by our team since it's over our direct refund limit. I'm sending this to our support team for investigation and resolution.\n\nWhat happens next: A specialist will review the duplicate charge and process the refund to your account. You should hear back within 24 hours.",
+    "generation_info": {
+     "finish_reason": "stop",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "I found the issue\u2014you were charged twice for the same ride ($68 + $68). This is a billing error that needs to be reviewed by our team since it's over our direct refund limit. I'm sending this to our support team for investigation and resolution.\n\nWhat happens next: A specialist will review the duplicate charge and process the refund to your account. You should hear back within 24 hours.",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 90,
+        "prompt_tokens": 1468,
+        "total_tokens": 1558,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 90
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 1468,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.5-haiku",
+       "system_fingerprint": null,
+       "id": "chatcmpl-f74de3af-8189-4d9c-bfe1-d343ad5449f9",
+       "finish_reason": "stop",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16abf-25b9-7273-a0d8-f7a15ccccaeb-0",
+      "usage_metadata": {
+       "input_tokens": 1468,
+       "output_tokens": 90,
+       "total_tokens": 1558,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "tool_calls": [],
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

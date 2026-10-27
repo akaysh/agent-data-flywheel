@@ -1,0 +1,41 @@
+{
+  "rides": [
+    {
+      "ride_id": "R600",
+      "date": "2026-10-30",
+      "pickup": "SoMa",
+      "dropoff": "Mission",
+      "fare": 11.0
+    },
+    {
+      "ride_id": "R601",
+      "date": "2026-10-27",
+      "pickup": "SoMa",
+      "dropoff": "Oakland",
+      "fare": 39.0
+    },
+    {
+      "ride_id": "R602",
+      "date": "2026-10-25",
+      "pickup": "Mission",
+      "dropoff": "SoMa",
+      "fare": 10.5
+    }
+  ],
+  "charges": [
+    {
+      "charge_id": "C601",
+      "ride_id": "R601",
+      "type": "fare",
+      "amount": 31.0,
+      "status": "settled"
+    },
+    {
+      "charge_id": "C602",
+      "ride_id": "R601",
+      "type": "toll",
+      "amount": 8.0,
+      "status": "settled"
+    }
+  ]
+}

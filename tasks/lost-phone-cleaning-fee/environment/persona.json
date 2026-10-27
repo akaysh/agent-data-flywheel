@@ -1,0 +1,7 @@
+{
+  "goal": "Get the phone back AND the cleaning fee removed.",
+  "hidden_facts": [
+    "No mess was made."
+  ],
+  "behavior": "Annoyed. Will bring up the fee again if ignored."
+}

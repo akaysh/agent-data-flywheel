@@ -1,0 +1,2 @@
+{"tool": "get_account", "args": {}}
+{"tool": "update_account", "args": {"field": "phone", "value": "+1-555-0142"}}

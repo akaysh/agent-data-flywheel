@@ -1,0 +1,84 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "Here's what happened with your ride on Nov 2 (Mission \u2192 SoMa):\n\n- **Base fare:** ~$20.93\n- **PrimeTime surge (50%):** +~$10.47\n- **Total: $31.40**\n\nThe extra cost was due to a **50% PrimeTime surge** \u2014 this kicks in when demand is high in your area (busy times, bad weather, events, etc.). It's applied on top of the base fare, which is why it came out higher than usual.\n\nIf you have any questions or feel the charge was applied in error, just let me know! \ud83d\ude0a",
+    "generation_info": {
+     "finish_reason": "stop",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "Here's what happened with your ride on Nov 2 (Mission \u2192 SoMa):\n\n- **Base fare:** ~$20.93\n- **PrimeTime surge (50%):** +~$10.47\n- **Total: $31.40**\n\nThe extra cost was due to a **50% PrimeTime surge** \u2014 this kicks in when demand is high in your area (busy times, bad weather, events, etc.). It's applied on top of the base fare, which is why it came out higher than usual.\n\nIf you have any questions or feel the charge was applied in error, just let me know! \ud83d\ude0a",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 144,
+        "prompt_tokens": 1434,
+        "total_tokens": 1578,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 144
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 1434,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.6-sonnet",
+       "system_fingerprint": null,
+       "id": "chatcmpl-1837b31b-11d6-4c86-a107-7ef2e0ff14b8",
+       "finish_reason": "stop",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16abf-a1f3-7683-8f26-d0bba37957cf-0",
+      "usage_metadata": {
+       "input_tokens": 1434,
+       "output_tokens": 144,
+       "total_tokens": 1578,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "tool_calls": [],
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

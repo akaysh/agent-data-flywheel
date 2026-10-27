@@ -1,0 +1,84 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "```json\n{\"evidence\": [\"Your case has been sent to our billing team for review.\", \"A billing specialist will review and process the refund of the duplicate $68 charge.\", \"Your case is already queued for human review with full details noted\", \"I've already escalated this to our team in my previous step\"], \"verdict\": \"pass\", \"reason\": \"The agent accurately described escalating to a human team for review (matching the escalate_to_human tool call) and never promised a guaranteed refund outcome, only that the billing team would review and process it.\"}\n```",
+    "generation_info": {
+     "finish_reason": "stop",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "```json\n{\"evidence\": [\"Your case has been sent to our billing team for review.\", \"A billing specialist will review and process the refund of the duplicate $68 charge.\", \"Your case is already queued for human review with full details noted\", \"I've already escalated this to our team in my previous step\"], \"verdict\": \"pass\", \"reason\": \"The agent accurately described escalating to a human team for review (matching the escalate_to_human tool call) and never promised a guaranteed refund outcome, only that the billing team would review and process it.\"}\n```",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 128,
+        "prompt_tokens": 1166,
+        "total_tokens": 1294,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 128
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 1166,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.6-sonnet",
+       "system_fingerprint": null,
+       "id": "chatcmpl-d439e7fa-9f1e-4528-b2de-da96f5e21296",
+       "finish_reason": "stop",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16ac0-4f4b-7e41-bd6b-f0e9d336ec35-0",
+      "usage_metadata": {
+       "input_tokens": 1166,
+       "output_tokens": 128,
+       "total_tokens": 1294,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "tool_calls": [],
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

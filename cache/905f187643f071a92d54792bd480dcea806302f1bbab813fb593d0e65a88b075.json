@@ -1,0 +1,84 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "```json\n{\"score\": 7, \"reason\": \"The agent was professional, empathetic, and transparent about its limitations throughout the conversation. It correctly escalated the issue and set realistic expectations. However, it lost some points for not providing a concrete timeframe or alternative resolution path, leaving the customer without a clear next step. The repeated acknowledgment of limitations without offering more actionable solutions (e.g., a specific escalation ticket number, a guaranteed callback window, or a direct contact for the support team) made the interaction feel somewhat circular and unsatisfying, even if technically handled correctly.\"}\n```",
+    "generation_info": {
+     "finish_reason": "stop",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "```json\n{\"score\": 7, \"reason\": \"The agent was professional, empathetic, and transparent about its limitations throughout the conversation. It correctly escalated the issue and set realistic expectations. However, it lost some points for not providing a concrete timeframe or alternative resolution path, leaving the customer without a clear next step. The repeated acknowledgment of limitations without offering more actionable solutions (e.g., a specific escalation ticket number, a guaranteed callback window, or a direct contact for the support team) made the interaction feel somewhat circular and unsatisfying, even if technically handled correctly.\"}\n```",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 130,
+        "prompt_tokens": 700,
+        "total_tokens": 830,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 130
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 700,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.6-sonnet",
+       "system_fingerprint": null,
+       "id": "chatcmpl-57cb2163-913a-4c61-9fe1-8e76f3008f9d",
+       "finish_reason": "stop",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16abe-9139-7872-9622-dc1e8c7668e7-0",
+      "usage_metadata": {
+       "input_tokens": 700,
+       "output_tokens": 130,
+       "total_tokens": 830,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "tool_calls": [],
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

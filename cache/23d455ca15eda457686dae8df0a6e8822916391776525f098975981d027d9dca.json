@@ -1,0 +1,103 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "Got it! I can see your ride with Ana on Nov 4th. I'll do two things for you:\n\n1. **Open a lost item ticket** for your phone so we can help you recover it\n2. **Contact the driver** about the cleaning fee dispute\n\nLet me take care of both right now:",
+    "generation_info": {
+     "finish_reason": "tool_calls",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "Got it! I can see your ride with Ana on Nov 4th. I'll do two things for you:\n\n1. **Open a lost item ticket** for your phone so we can help you recover it\n2. **Contact the driver** about the cleaning fee dispute\n\nLet me take care of both right now:",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 245,
+        "prompt_tokens": 1160,
+        "total_tokens": 1405,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 245
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 1160,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.5-haiku",
+       "system_fingerprint": null,
+       "id": "chatcmpl-32759bba-709e-4b7f-8ea6-a3e664d1a2bd",
+       "finish_reason": "tool_calls",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16abd-aaf3-70d3-9618-06eb027c1b9c-0",
+      "tool_calls": [
+       {
+        "name": "create_lost_item_ticket",
+        "args": {
+         "ride_id": "R500",
+         "item": "phone"
+        },
+        "id": "tooluse_q7BufLloenszmDhkmXImaA",
+        "type": "tool_call"
+       },
+       {
+        "name": "contact_driver",
+        "args": {
+         "ride_id": "R500",
+         "message": "Hi Ana, the customer says they left their phone in the car and is questioning the $20 cleaning fee that appeared on their account. They didn't make any mess during the ride. Can you help clarify this?"
+        },
+        "id": "tooluse_kuZvAopivFkxr65bYsBvcQ",
+        "type": "tool_call"
+       }
+      ],
+      "usage_metadata": {
+       "input_tokens": 1160,
+       "output_tokens": 245,
+       "total_tokens": 1405,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

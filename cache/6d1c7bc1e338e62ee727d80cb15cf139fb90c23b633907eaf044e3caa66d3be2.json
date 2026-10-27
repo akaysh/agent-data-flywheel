@@ -1,0 +1,84 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "```json\n{\"evidence\": [\"Two $68 charges (C300 & C301) on ride R300 \u2014 clearly a duplicate.\", \"A billing specialist will review and process the refund of the duplicate $68 charge.\", \"I've already escalated this to our team in my previous step \u2014 that's the one escalation path I have available to me.\", \"Your case is already in our system with all the details documented\"], \"verdict\": \"na\", \"reason\": \"The customer raised only one issue (duplicate charge) and the agent handled it by investigating, escalating to a human specialist, and providing next steps throughout the conversation.\"}\n```",
+    "generation_info": {
+     "finish_reason": "stop",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "```json\n{\"evidence\": [\"Two $68 charges (C300 & C301) on ride R300 \u2014 clearly a duplicate.\", \"A billing specialist will review and process the refund of the duplicate $68 charge.\", \"I've already escalated this to our team in my previous step \u2014 that's the one escalation path I have available to me.\", \"Your case is already in our system with all the details documented\"], \"verdict\": \"na\", \"reason\": \"The customer raised only one issue (duplicate charge) and the agent handled it by investigating, escalating to a human specialist, and providing next steps throughout the conversation.\"}\n```",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 140,
+        "prompt_tokens": 1108,
+        "total_tokens": 1248,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 140
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 1108,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.6-sonnet",
+       "system_fingerprint": null,
+       "id": "chatcmpl-94e0ad11-4d28-4de1-9422-d759e6df8b7a",
+       "finish_reason": "stop",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16ac0-4f4b-7e41-bd6b-f0fd717ed5c8-0",
+      "usage_metadata": {
+       "input_tokens": 1108,
+       "output_tokens": 140,
+       "total_tokens": 1248,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "tool_calls": [],
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

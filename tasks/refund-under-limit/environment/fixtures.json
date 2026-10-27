@@ -1,0 +1,27 @@
+{
+  "rides": [
+    {
+      "ride_id": "R200",
+      "date": "2026-11-03",
+      "pickup": "Daly City",
+      "dropoff": "Market St",
+      "fare": 24.1
+    }
+  ],
+  "charges": [
+    {
+      "charge_id": "C200",
+      "ride_id": "R200",
+      "type": "fare",
+      "amount": 12.1,
+      "status": "settled"
+    },
+    {
+      "charge_id": "C201",
+      "ride_id": "R200",
+      "type": "airport_fee",
+      "amount": 12.0,
+      "status": "settled"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "I'm sorry, but I'm not able to share driver phone numbers \u2014 that's our privacy policy.\n\nWhat I *can* do is contact the driver on your behalf right away! Let me pull up your recent rides first so we can make sure we're looking at the right one.",
+    "generation_info": {
+     "finish_reason": "tool_calls",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "I'm sorry, but I'm not able to share driver phone numbers \u2014 that's our privacy policy.\n\nWhat I *can* do is contact the driver on your behalf right away! Let me pull up your recent rides first so we can make sure we're looking at the right one.",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 98,
+        "prompt_tokens": 1170,
+        "total_tokens": 1268,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 98
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 1170,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.6-sonnet",
+       "system_fingerprint": null,
+       "id": "chatcmpl-d3aba97e-de39-4513-b914-9afdfbcea0e3",
+       "finish_reason": "tool_calls",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16abf-7d73-7611-843e-1a55dca06854-0",
+      "tool_calls": [
+       {
+        "name": "list_recent_rides",
+        "args": {},
+        "id": "tooluse_Clu4tgUaVrlSKuRN1S0vG0",
+        "type": "tool_call"
+       }
+      ],
+      "usage_metadata": {
+       "input_tokens": 1170,
+       "output_tokens": 98,
+       "total_tokens": 1268,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

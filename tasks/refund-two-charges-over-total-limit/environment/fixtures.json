@@ -1,0 +1,27 @@
+{
+  "rides": [
+    {
+      "ride_id": "R1010",
+      "date": "2026-11-04",
+      "pickup": "Sunset",
+      "dropoff": "Richmond",
+      "fare": 16.0
+    }
+  ],
+  "charges": [
+    {
+      "charge_id": "C1010",
+      "ride_id": "R1010",
+      "type": "cleaning_fee",
+      "amount": 20.0,
+      "status": "settled"
+    },
+    {
+      "charge_id": "C1011",
+      "ride_id": "R1010",
+      "type": "damage_fee",
+      "amount": 20.0,
+      "status": "settled"
+    }
+  ]
+}

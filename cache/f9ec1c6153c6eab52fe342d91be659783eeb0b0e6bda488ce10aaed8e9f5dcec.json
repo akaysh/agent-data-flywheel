@@ -1,0 +1,84 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "{\"evidence\": [\"It looks like you have one recent ride \u2014 this morning from **Noe Valley to FiDi** with driver **Sam**. Is that the ride you're thinking of?\", \"Yes, that's the one!\"], \"verdict\": \"na\", \"reason\": \"There was exactly one recent ride and no risk flag, so the ambiguity criterion does not apply; the agent confirmed with the customer anyway before acting, which is fine but not required.\"}",
+    "generation_info": {
+     "finish_reason": "stop",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "{\"evidence\": [\"It looks like you have one recent ride \u2014 this morning from **Noe Valley to FiDi** with driver **Sam**. Is that the ride you're thinking of?\", \"Yes, that's the one!\"], \"verdict\": \"na\", \"reason\": \"There was exactly one recent ride and no risk flag, so the ambiguity criterion does not apply; the agent confirmed with the customer anyway before acting, which is fine but not required.\"}",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 104,
+        "prompt_tokens": 792,
+        "total_tokens": 896,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 104
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 792,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.6-sonnet",
+       "system_fingerprint": null,
+       "id": "chatcmpl-abe73918-f969-45a2-9236-45f5f3226c27",
+       "finish_reason": "stop",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16ac0-35c8-7761-a64b-ffc9ab9f19e6-0",
+      "usage_metadata": {
+       "input_tokens": 792,
+       "output_tokens": 104,
+       "total_tokens": 896,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "tool_calls": [],
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

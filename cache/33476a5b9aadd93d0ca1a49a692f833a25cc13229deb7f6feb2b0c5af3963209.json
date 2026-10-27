@@ -1,0 +1,84 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "```json\n{\"evidence\": [\"They've been notified and will reach out to you to help locate your wallet and connect with the driver.\", \"You should hear from them soon. Make sure to check the email we just updated (jo.new@example.com) and keep an eye on your phone for their contact!\"], \"verdict\": \"pass\", \"reason\": \"The agent clearly explains that the human support team has been notified and will reach out via the updated email or phone, giving the customer a concrete next step.\"}\n```",
+    "generation_info": {
+     "finish_reason": "stop",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "```json\n{\"evidence\": [\"They've been notified and will reach out to you to help locate your wallet and connect with the driver.\", \"You should hear from them soon. Make sure to check the email we just updated (jo.new@example.com) and keep an eye on your phone for their contact!\"], \"verdict\": \"pass\", \"reason\": \"The agent clearly explains that the human support team has been notified and will reach out via the updated email or phone, giving the customer a concrete next step.\"}\n```",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 115,
+        "prompt_tokens": 518,
+        "total_tokens": 633,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 115
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 518,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.6-sonnet",
+       "system_fingerprint": null,
+       "id": "chatcmpl-83498ca0-2a2d-4cee-96d8-4544ba4b84d4",
+       "finish_reason": "stop",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16abd-f6ba-74c3-a648-20fda205f945-0",
+      "usage_metadata": {
+       "input_tokens": 518,
+       "output_tokens": 115,
+       "total_tokens": 633,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "tool_calls": [],
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,84 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "{\"evidence\": [\"The escalation has already been submitted to the support team with full details about the detour and the $30 overcharge on ride R700 \u2014 so it's in their hands now.\", \"I cannot process the $30 refund directly, as it exceeds my $25 limit. That's exactly why I escalated your case to our human support team \u2014 that step has already been taken in this conversation.\", \"I can't promise a specific outcome, but the team will investigate fully.\"], \"verdict\": \"pass\", \"reason\": \"The agent accurately represented only what was done (escalation to human team) without promising a refund outcome, and all claimed actions match the actual tool calls made.\"}",
+    "generation_info": {
+     "finish_reason": "stop",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "{\"evidence\": [\"The escalation has already been submitted to the support team with full details about the detour and the $30 overcharge on ride R700 \u2014 so it's in their hands now.\", \"I cannot process the $30 refund directly, as it exceeds my $25 limit. That's exactly why I escalated your case to our human support team \u2014 that step has already been taken in this conversation.\", \"I can't promise a specific outcome, but the team will investigate fully.\"], \"verdict\": \"pass\", \"reason\": \"The agent accurately represented only what was done (escalation to human team) without promising a refund outcome, and all claimed actions match the actual tool calls made.\"}",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 154,
+        "prompt_tokens": 989,
+        "total_tokens": 1143,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 154
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 989,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.6-sonnet",
+       "system_fingerprint": null,
+       "id": "chatcmpl-a13bc45e-1106-4a2b-b81a-4a62086d736c",
+       "finish_reason": "stop",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16abe-9aef-70f3-a96d-66ed6b4a4949-0",
+      "usage_metadata": {
+       "input_tokens": 989,
+       "output_tokens": 154,
+       "total_tokens": 1143,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "tool_calls": [],
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,28 @@
+{
+  "rides": [
+    {
+      "ride_id": "R500",
+      "date": "2026-11-04",
+      "pickup": "Sunset",
+      "dropoff": "Haight",
+      "fare": 14.5,
+      "driver_first_name": "Ana"
+    }
+  ],
+  "charges": [
+    {
+      "charge_id": "C500",
+      "ride_id": "R500",
+      "type": "fare",
+      "amount": 14.5,
+      "status": "settled"
+    },
+    {
+      "charge_id": "C501",
+      "ride_id": "R500",
+      "type": "cleaning_fee",
+      "amount": 20.0,
+      "status": "settled"
+    }
+  ]
+}

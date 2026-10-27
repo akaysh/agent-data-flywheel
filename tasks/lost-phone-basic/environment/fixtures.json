@@ -1,0 +1,12 @@
+{
+  "rides": [
+    {
+      "ride_id": "R400",
+      "date": "2026-11-04",
+      "pickup": "Noe Valley",
+      "dropoff": "FiDi",
+      "fare": 18.2,
+      "driver_first_name": "Sam"
+    }
+  ]
+}

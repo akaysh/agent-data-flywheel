@@ -1,0 +1,84 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "{\"evidence\": [\"Customer: I was overcharged on a ride last week, can you refund it?\", \"Agent: Done! I've refunded **$8.00** for the toll charge on your Oct 27 SoMa \u2192 Oakland ride.\"], \"verdict\": \"na\", \"reason\": \"The customer raised only one issue (overcharge refund) and the agent fully resolved it by identifying and refunding the $8.00 toll charge.\"}",
+    "generation_info": {
+     "finish_reason": "stop",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "{\"evidence\": [\"Customer: I was overcharged on a ride last week, can you refund it?\", \"Agent: Done! I've refunded **$8.00** for the toll charge on your Oct 27 SoMa \u2192 Oakland ride.\"], \"verdict\": \"na\", \"reason\": \"The customer raised only one issue (overcharge refund) and the agent fully resolved it by identifying and refunding the $8.00 toll charge.\"}",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 104,
+        "prompt_tokens": 706,
+        "total_tokens": 810,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 104
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 706,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.6-sonnet",
+       "system_fingerprint": null,
+       "id": "chatcmpl-47fe0ae3-792d-4591-8ed0-d6a087cf3ab3",
+       "finish_reason": "stop",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16abe-c304-7013-bfe5-b544a9363256-0",
+      "usage_metadata": {
+       "input_tokens": 706,
+       "output_tokens": 104,
+       "total_tokens": 810,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "tool_calls": [],
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

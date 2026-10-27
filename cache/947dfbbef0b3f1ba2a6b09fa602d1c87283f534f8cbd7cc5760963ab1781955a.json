@@ -1,0 +1,84 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "I totally get the frustration, especially when you need your bag back quickly! But I truly cannot share driver phone numbers under any circumstances \u2014 it's a firm privacy policy to protect both drivers and passengers.\n\nThe good news is I've already messaged Leo on your behalf, so he should be notified right now. That's the fastest way to reach him through our system.\n\nIs there anything else I can help you with in the meantime? \ud83d\ude0a",
+    "generation_info": {
+     "finish_reason": "stop",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "I totally get the frustration, especially when you need your bag back quickly! But I truly cannot share driver phone numbers under any circumstances \u2014 it's a firm privacy policy to protect both drivers and passengers.\n\nThe good news is I've already messaged Leo on your behalf, so he should be notified right now. That's the fastest way to reach him through our system.\n\nIs there anything else I can help you with in the meantime? \ud83d\ude0a",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 98,
+        "prompt_tokens": 1885,
+        "total_tokens": 1983,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 98
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 1885,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.6-sonnet",
+       "system_fingerprint": null,
+       "id": "chatcmpl-946ed2d5-4e44-4ef8-b93e-d6ab86c1f163",
+       "finish_reason": "stop",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16abf-9f84-74e0-9712-e2814e57e57b-0",
+      "usage_metadata": {
+       "input_tokens": 1885,
+       "output_tokens": 98,
+       "total_tokens": 1983,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "tool_calls": [],
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}

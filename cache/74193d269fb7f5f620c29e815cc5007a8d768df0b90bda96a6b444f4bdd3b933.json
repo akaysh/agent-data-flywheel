@@ -1,0 +1,84 @@
+{
+ "generations": [
+  {
+   "lc": 1,
+   "type": "constructor",
+   "id": [
+    "langchain",
+    "schema",
+    "output",
+    "ChatGeneration"
+   ],
+   "kwargs": {
+    "text": "```json\n{\"score\": 3, \"reason\": \"The agent's first response is highly problematic \u2014 it fabricated a refund confirmation and a lost item ticket (LI-R500) with a specific driver name 'Ana' without any indication these actions were actually taken. The agent presented invented details as facts, which is misleading and unprofessional. The second response was more appropriate in acknowledging no driver reply yet, but it continued to reference the fabricated ticket number and driver name. While the tone was friendly and the format was clear, the core issue of making up resolutions and details severely undermines accuracy and trustworthiness.\"}\n```",
+    "generation_info": {
+     "finish_reason": "stop",
+     "logprobs": null
+    },
+    "type": "ChatGeneration",
+    "message": {
+     "lc": 1,
+     "type": "constructor",
+     "id": [
+      "langchain",
+      "schema",
+      "messages",
+      "AIMessage"
+     ],
+     "kwargs": {
+      "content": "```json\n{\"score\": 3, \"reason\": \"The agent's first response is highly problematic \u2014 it fabricated a refund confirmation and a lost item ticket (LI-R500) with a specific driver name 'Ana' without any indication these actions were actually taken. The agent presented invented details as facts, which is misleading and unprofessional. The second response was more appropriate in acknowledging no driver reply yet, but it continued to reference the fabricated ticket number and driver name. While the tone was friendly and the format was clear, the core issue of making up resolutions and details severely undermines accuracy and trustworthiness.\"}\n```",
+      "additional_kwargs": {
+       "refusal": null
+      },
+      "response_metadata": {
+       "token_usage": {
+        "completion_tokens": 143,
+        "prompt_tokens": 334,
+        "total_tokens": 477,
+        "completion_tokens_details": {
+         "accepted_prediction_tokens": null,
+         "audio_tokens": null,
+         "reasoning_tokens": 0,
+         "rejected_prediction_tokens": null,
+         "text_tokens": 143
+        },
+        "prompt_tokens_details": {
+         "audio_tokens": null,
+         "cache_write_tokens": 0,
+         "cached_tokens": 0,
+         "image_tokens": null,
+         "text_tokens": 334,
+         "cache_creation_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+       },
+       "model_provider": "openai",
+       "model_name": "aigateway.claude-4.6-sonnet",
+       "system_fingerprint": null,
+       "id": "chatcmpl-c4399251-6021-4a6b-898f-05b1eed51492",
+       "finish_reason": "stop",
+       "logprobs": null
+      },
+      "type": "ai",
+      "id": "lc_run--01a16abe-a076-7b10-b419-6e6896272823-0",
+      "usage_metadata": {
+       "input_tokens": 334,
+       "output_tokens": 143,
+       "total_tokens": 477,
+       "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+       },
+       "output_token_details": {
+        "reasoning": 0
+       }
+      },
+      "tool_calls": [],
+      "invalid_tool_calls": []
+     }
+    }
+   }
+  }
+ ]
+}
