@@ -25,7 +25,9 @@ recorded LLM responses with no key or wifi.
 ## Run it
 
 ```bash
-uv venv --python 3.12 .venv && uv pip install -r requirements.txt
+uv venv --python 3.12 .venv && source .venv/bin/activate   # Windows: .venv\Scripts\activate
+uv pip install -r requirements.txt
+uv pip install jupyterlab   # only to open workshop.ipynb locally
 cp .env.example .env   # fill in, or use OFFLINE=1
 python scripts/make_tasks.py
 pytest                 # no LLM needed
