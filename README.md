@@ -19,7 +19,7 @@ recorded LLM responses with no key or wifi.
 | `runner/` | Docker-free runner for Colab. Same tasks, same verifier as Harbor |
 | `harbor_adapter/` | Harbor agent adapter for `harbor run` on stage |
 | `judge/` | Vague and good rubrics, judge runner, kappa vs expert labels |
-| `flywheel/` | Failed traces to regression tasks, verdicts to DPO pairs and rewards |
+| `flywheel/` | Failed traces to regression tasks, verdicts to DPO pairs, SFT examples and rewards (RLVR, RLHF) |
 | `llm/` | Chat model factory (any OpenAI-compatible endpoint) and the disk cache for `OFFLINE` |
 
 ## Run it
